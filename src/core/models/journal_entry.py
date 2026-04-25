@@ -141,7 +141,8 @@ class JournalEntryLine(Base, UUIDMixin, TimestampMixin):
     # Relations
     entry: Mapped["JournalEntry"] = relationship(back_populates="lines")
     account: Mapped["Account"] = relationship(  # type: ignore[name-defined]  # noqa: F821
-        back_populates="journal_lines", foreign_keys=[account_id]
+        back_populates="journal_lines",
+        foreign_keys="[JournalEntryLine.account_id]",
     )
 
     @property

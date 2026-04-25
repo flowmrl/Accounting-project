@@ -105,7 +105,9 @@ class Account(Base, UUIDMixin, TimestampMixin):
     )
     children: Mapped[list["Account"]] = relationship(back_populates="parent")
     journal_lines: Mapped[list["JournalEntryLine"]] = relationship(  # type: ignore[name-defined]  # noqa: F821
-        back_populates="account"
+        back_populates="account",
+        foreign_keys="[JournalEntryLine.account_id]",
+        primaryjoin="Account.id == JournalEntryLine.account_id",
     )
 
     @property
