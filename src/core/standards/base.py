@@ -23,6 +23,7 @@ class AccountTemplate:
     account_class: str
     parent_code: str | None = None
     is_detail: bool = True
+    is_reconcilable: bool = False
     vat_code: str | None = None
     notes: str | None = None
     tags: list[str] = field(default_factory=list)
