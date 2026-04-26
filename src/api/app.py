@@ -5,6 +5,7 @@ from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
 from src.api.routes import (
+    analytique,
     auth,
     accounts,
     companies,
@@ -12,8 +13,12 @@ from src.api.routes import (
     facturation,
     immobilisations,
     journal_entries,
+    notes_frais,
+    ocr,
+    paie,
     reports,
     standards,
+    stocks,
     tax,
     tresorerie,
     tva,
@@ -60,6 +65,11 @@ def create_app() -> FastAPI:
     app.include_router(facturation.router,      prefix=prefix)
     app.include_router(tresorerie.router,       prefix=prefix)
     app.include_router(consolidation.router,    prefix=prefix)
+    app.include_router(analytique.router,       prefix=prefix)
+    app.include_router(stocks.router,           prefix=prefix)
+    app.include_router(notes_frais.router,      prefix=prefix)
+    app.include_router(paie.router,             prefix=prefix)
+    app.include_router(ocr.router,              prefix=prefix)
 
     @app.get("/", tags=["Health"])
     async def root() -> dict:
