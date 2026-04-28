@@ -4,8 +4,8 @@ from __future__ import annotations
 from typing import Any
 
 from src.core.standards.base import (
-    AccountTemplate,
     AccountingStandard,
+    AccountTemplate,
     FinancialStatement,
     FinancialStatementLine,
     StandardRegistry,

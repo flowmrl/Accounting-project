@@ -9,7 +9,7 @@ from pydantic import BaseModel
 from sqlalchemy.orm import Session
 
 from src.api.middleware.auth import get_current_user
-from src.core.engine.reports import generate_balance_sheet, generate_income_statement, compute_key_ratios
+from src.core.engine.reports import compute_key_ratios, generate_balance_sheet, generate_income_statement
 from src.db.session import get_session
 
 router = APIRouter(prefix="/reports", tags=["Reporting financier"])

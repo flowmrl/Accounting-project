@@ -9,9 +9,9 @@ from pydantic import BaseModel
 from sqlalchemy.orm import Session
 
 from src.api.middleware.auth import get_current_user
-from src.modules.tresorerie.models import BankAccount, BankTransaction, CashForecast
-from src.modules.tresorerie.tft_engine import compute_daily_tft, build_forecast_from_invoices
 from src.db.session import get_session
+from src.modules.tresorerie.models import BankAccount, BankTransaction, CashForecast
+from src.modules.tresorerie.tft_engine import build_forecast_from_invoices, compute_daily_tft
 
 router = APIRouter(prefix="/treasury", tags=["Trésorerie"])
 

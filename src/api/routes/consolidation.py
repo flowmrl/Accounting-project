@@ -1,6 +1,7 @@
 """Consolidation groupe — périmètre, agrégation, éliminations."""
 from __future__ import annotations
 
+import uuid
 from decimal import Decimal
 
 from fastapi import APIRouter, Depends, HTTPException, Query
@@ -8,12 +9,15 @@ from pydantic import BaseModel
 from sqlalchemy.orm import Session
 
 from src.api.middleware.auth import get_current_user
+from src.db.session import get_session
 from src.modules.consolidation.engine import build_consolidated_package
 from src.modules.consolidation.models import (
-    Group, GroupEntity, IntegrationMethod, IntraGroupElimination, EliminationType,
+    EliminationType,
+    Group,
+    GroupEntity,
+    IntegrationMethod,
+    IntraGroupElimination,
 )
-from src.db.session import get_session
-import uuid
 
 router = APIRouter(prefix="/consolidation", tags=["Consolidation Groupe"])
 

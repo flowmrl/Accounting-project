@@ -1,7 +1,7 @@
 """OCR — extraction de données depuis fichiers facture."""
 from __future__ import annotations
 
-from fastapi import APIRouter, Depends, UploadFile, File
+from fastapi import APIRouter, Depends, File, UploadFile
 
 from src.api.middleware.auth import get_current_user
 from src.modules.ocr.extractor import extract_invoice_data

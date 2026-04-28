@@ -2,12 +2,11 @@
 from __future__ import annotations
 
 from sqlalchemy import create_engine
-from sqlalchemy.orm import sessionmaker, Session
+from sqlalchemy.orm import Session, sessionmaker
 
-from src.core.models.base import Base  # noqa: F401 — triggers model registration
 import src.core.models  # noqa: F401
-
 from src.config import settings
+from src.core.models.base import Base  # noqa: F401 — triggers model registration
 
 _engine = None
 _SessionLocal = None

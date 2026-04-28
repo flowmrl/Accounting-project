@@ -9,8 +9,8 @@ from sqlalchemy.orm import Session
 
 from src.api.middleware.auth import get_current_user
 from src.db.session import get_session
+from src.modules.analytique.engine import distribute_line, get_budget_vs_realise
 from src.modules.analytique.models import AnalyticAxis, AnalyticSection, AxisType
-from src.modules.analytique.engine import get_budget_vs_realise, distribute_line
 
 router = APIRouter(prefix="/analytic", tags=["Analytique"])
 

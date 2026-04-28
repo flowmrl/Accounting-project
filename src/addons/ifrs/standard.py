@@ -9,8 +9,8 @@ from __future__ import annotations
 from typing import Any
 
 from src.core.standards.base import (
-    AccountTemplate,
     AccountingStandard,
+    AccountTemplate,
     FinancialStatement,
     FinancialStatementLine,
     StandardRegistry,
@@ -120,8 +120,8 @@ class IFRSRetraitement:
         IFRS 16 — Capitalisation des contrats de location.
         Transforme les loyers (613x) en actif de droit d'utilisation + dette de loyer.
         """
-        from decimal import Decimal
         import math
+        from decimal import Decimal
         pv = Decimal(str(lease_amount * (1 - (1 + rate) ** -years) / rate))
         return {
             "droit_utilisation": pv,           # Débit 213x ou 218x

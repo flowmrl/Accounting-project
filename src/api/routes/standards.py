@@ -4,20 +4,20 @@ from __future__ import annotations
 from fastapi import APIRouter, HTTPException
 from pydantic import BaseModel
 
-from src.core.standards.base import StandardRegistry
+import src.addons.be_gaap.standard  # noqa: F401
+import src.addons.dutch_bw2.standard  # noqa: F401
+import src.addons.german_hgb.standard  # noqa: F401
 
 # Import all add-ons to ensure they register
-import src.addons.ifrs.standard          # noqa: F401
-import src.addons.us_gaap.standard       # noqa: F401
-import src.addons.be_gaap.standard       # noqa: F401
-import src.addons.german_hgb.standard    # noqa: F401
-import src.addons.uk_frs.standard        # noqa: F401
-import src.addons.swiss_fer.standard     # noqa: F401
-import src.addons.spanish_pgc.standard   # noqa: F401
-import src.addons.italian_oic.standard   # noqa: F401
-import src.addons.dutch_bw2.standard     # noqa: F401
-import src.addons.polish_psr.standard    # noqa: F401
+import src.addons.ifrs.standard  # noqa: F401
+import src.addons.italian_oic.standard  # noqa: F401
 import src.addons.luxembourg_gaap.standard  # noqa: F401
+import src.addons.polish_psr.standard  # noqa: F401
+import src.addons.spanish_pgc.standard  # noqa: F401
+import src.addons.swiss_fer.standard  # noqa: F401
+import src.addons.uk_frs.standard  # noqa: F401
+import src.addons.us_gaap.standard  # noqa: F401
+from src.core.standards.base import StandardRegistry
 
 router = APIRouter(prefix="/standards", tags=["Référentiels"])
 

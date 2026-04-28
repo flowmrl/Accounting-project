@@ -11,7 +11,10 @@ from sqlalchemy.orm import Session
 from src.api.middleware.auth import get_current_user
 from src.db.session import get_session
 from src.modules.notes_frais.models import (
-    NoteFrais, LigneFrais, ExpenseStatus, ExpenseCategory,
+    ExpenseCategory,
+    ExpenseStatus,
+    LigneFrais,
+    NoteFrais,
     compute_indemnite_kilometrique,
 )
 

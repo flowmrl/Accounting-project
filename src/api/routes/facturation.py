@@ -1,6 +1,7 @@
 """Facturation — devis, factures, avoirs, relances, balance âgée."""
 from __future__ import annotations
 
+import uuid
 from datetime import date
 from decimal import Decimal
 
@@ -9,10 +10,11 @@ from pydantic import BaseModel
 from sqlalchemy.orm import Session
 
 from src.api.middleware.auth import get_current_user
-from src.modules.facturation.models import Invoice, InvoiceLine, DocumentStatus as InvoiceStatus, DocumentType as InvoiceType
-from src.modules.facturation.service import validate_invoice, create_credit_note, get_aged_balance
 from src.db.session import get_session
-import uuid
+from src.modules.facturation.models import DocumentStatus as InvoiceStatus
+from src.modules.facturation.models import DocumentType as InvoiceType
+from src.modules.facturation.models import Invoice, InvoiceLine
+from src.modules.facturation.service import create_credit_note, get_aged_balance, validate_invoice
 
 router = APIRouter(prefix="/invoices", tags=["Facturation"])
 

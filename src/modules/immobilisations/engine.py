@@ -7,7 +7,7 @@ unités d'œuvre, non amortissable.
 from __future__ import annotations
 
 from datetime import date
-from decimal import Decimal, ROUND_HALF_UP
+from decimal import ROUND_HALF_UP, Decimal
 
 from .models import DepreciationLine, DepreciationMethod, FixedAsset
 
@@ -93,7 +93,6 @@ def _plan_lineaire(asset: FixedAsset, start: date, years: int, base: Decimal) ->
 def _plan_degressif(asset: FixedAsset, start: date, years: int, base: Decimal) -> list[DepreciationLine]:
     coeff = asset.degressive_rate or _coeff_degressif(years)
     rate_degressif = _round2(Decimal("1") / Decimal(years) * coeff)
-    rate_lineaire = _round2(Decimal("1") / Decimal(years))
 
     lines = []
     valeur_residuelle = base

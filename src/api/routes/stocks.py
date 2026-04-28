@@ -10,8 +10,8 @@ from sqlalchemy.orm import Session
 
 from src.api.middleware.auth import get_current_user
 from src.db.session import get_session
-from src.modules.stocks.models import Article, StockMovement, StockMoveType, ValuationMethod
 from src.modules.stocks.engine import apply_movement
+from src.modules.stocks.models import Article, StockMovement, StockMoveType, ValuationMethod
 
 router = APIRouter(prefix="/stocks", tags=["Stocks"])
 

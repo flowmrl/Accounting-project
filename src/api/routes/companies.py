@@ -8,7 +8,7 @@ from pydantic import BaseModel
 from sqlalchemy.orm import Session
 
 from src.api.middleware.auth import get_current_user
-from src.core.models.company import Company, LegalForm, VATRegime, TaxRegime
+from src.core.models.company import Company, LegalForm, TaxRegime, VATRegime
 from src.db.session import get_session
 
 router = APIRouter(prefix="/companies", tags=["Sociétés"])

@@ -7,8 +7,8 @@ from pathlib import Path
 from typing import Any
 
 from .base import (
-    AccountTemplate,
     AccountingStandard,
+    AccountTemplate,
     FinancialStatement,
     FinancialStatementLine,
     StandardRegistry,

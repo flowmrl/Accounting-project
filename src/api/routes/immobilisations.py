@@ -1,6 +1,7 @@
 """Immobilisations — fiches actif, plans d'amortissement, dotations."""
 from __future__ import annotations
 
+import uuid
 from datetime import date
 from decimal import Decimal
 from typing import Any
@@ -10,12 +11,14 @@ from pydantic import BaseModel
 from sqlalchemy.orm import Session
 
 from src.api.middleware.auth import get_current_user
+from src.db.session import get_session
 from src.modules.immobilisations.engine import compute_depreciation_plan, post_depreciation
 from src.modules.immobilisations.models import (
-    AssetCategory, AssetStatus, DepreciationMethod, FixedAsset,
+    AssetCategory,
+    AssetStatus,
+    DepreciationMethod,
+    FixedAsset,
 )
-from src.db.session import get_session
-import uuid
 
 router = APIRouter(prefix="/fixed-assets", tags=["Immobilisations"])
 

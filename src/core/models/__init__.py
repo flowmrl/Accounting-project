@@ -1,9 +1,9 @@
-from .account import Account, AccountType, AccountNature
+from .account import Account, AccountNature, AccountType
+from .company import Company
+from .currency import Currency
 from .fiscal_year import FiscalYear, FiscalYearStatus
 from .journal import Journal, JournalType
-from .journal_entry import JournalEntry, JournalEntryLine, EntryStatus
-from .currency import Currency
-from .company import Company
+from .journal_entry import EntryStatus, JournalEntry, JournalEntryLine
 
 __all__ = [
     "Account", "AccountType", "AccountNature",

@@ -5,9 +5,9 @@ from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
 from src.api.routes import (
+    accounts,
     analytique,
     auth,
-    accounts,
     companies,
     consolidation,
     facturation,

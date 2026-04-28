@@ -4,7 +4,7 @@ from __future__ import annotations
 from decimal import Decimal
 from enum import StrEnum
 
-from sqlalchemy import ForeignKey, Numeric, String, Date, Boolean
+from sqlalchemy import Boolean, Date, ForeignKey, Numeric, String
 from sqlalchemy.orm import Mapped, mapped_column, relationship
 
 from src.core.models.base import Base, TimestampMixin, UUIDMixin

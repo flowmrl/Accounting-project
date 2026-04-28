@@ -14,7 +14,7 @@ from decimal import Decimal
 
 from sqlalchemy.orm import Session
 
-from .models import BankAccount, BankTransaction, CashForecast, CashFlowCategory, ReconciliationStatus
+from .models import BankAccount, BankTransaction, CashFlowCategory, CashForecast, ReconciliationStatus
 
 ZERO = Decimal("0.00")
 

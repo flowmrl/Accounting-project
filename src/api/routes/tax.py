@@ -11,9 +11,9 @@ from pydantic import BaseModel
 from sqlalchemy.orm import Session
 
 from src.api.middleware.auth import get_current_user
-from src.modules.tax.fec_export import export_fec
-from src.modules.tax.is_engine import compute_is, compute_deferred_taxes
 from src.db.session import get_session
+from src.modules.tax.fec_export import export_fec
+from src.modules.tax.is_engine import compute_deferred_taxes, compute_is
 
 router = APIRouter(prefix="/tax", tags=["Fiscalité"])
 

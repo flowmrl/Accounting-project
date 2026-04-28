@@ -5,7 +5,7 @@ from decimal import Decimal
 
 import pytest
 
-from src.core.engine.ledger import validate_lines, LineInput, LedgerError
+from src.core.engine.ledger import LedgerError, LineInput, validate_lines
 
 
 def make_line(code: str, debit: float = 0, credit: float = 0, label: str = "Test") -> LineInput:

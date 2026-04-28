@@ -21,6 +21,7 @@ from src.core.engine.reports import (
     generate_balance_sheet,
     generate_income_statement,
 )
+
 from .models import EliminationType, Group, GroupEntity, IntegrationMethod, IntraGroupElimination
 
 ZERO = Decimal("0.00")
@@ -186,7 +187,8 @@ def _report_to_dict(report: FinancialReport) -> list[dict]:
 
 
 def _fy_end(session: Session, fiscal_year_id: str):
-    from src.core.models.fiscal_year import FiscalYear
     from datetime import date
+
+    from src.core.models.fiscal_year import FiscalYear
     fy = session.get(FiscalYear, fiscal_year_id)
     return fy.end_date if fy else date.max

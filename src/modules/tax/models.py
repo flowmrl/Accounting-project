@@ -5,7 +5,7 @@ from datetime import date
 from decimal import Decimal
 from enum import StrEnum
 
-from sqlalchemy import Date, ForeignKey, JSON, Numeric, String, Text
+from sqlalchemy import JSON, Date, ForeignKey, Numeric, String, Text
 from sqlalchemy.orm import Mapped, mapped_column, relationship
 
 from src.core.models.base import Base, TimestampMixin, UUIDMixin

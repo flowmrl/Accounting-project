@@ -7,7 +7,7 @@ from unittest.mock import MagicMock
 
 import pytest
 
-from src.core.engine.tva_engine import TVALine, TVADeclarationResult
+from src.core.engine.tva_engine import TVADeclarationResult, TVALine
 
 
 class TestTVALine:

@@ -1,19 +1,19 @@
 """Tests — référentiels comptables (StandardRegistry + 12 standards)."""
 import pytest
 
+import src.addons.be_gaap.standard
+import src.addons.dutch_bw2.standard
+import src.addons.german_hgb.standard
+
 # Import all standards to trigger registration
 import src.addons.ifrs.standard
-import src.addons.us_gaap.standard
-import src.addons.be_gaap.standard
-import src.addons.german_hgb.standard
-import src.addons.uk_frs.standard
-import src.addons.swiss_fer.standard
-import src.addons.spanish_pgc.standard
 import src.addons.italian_oic.standard
-import src.addons.dutch_bw2.standard
-import src.addons.polish_psr.standard
 import src.addons.luxembourg_gaap.standard
-
+import src.addons.polish_psr.standard
+import src.addons.spanish_pgc.standard
+import src.addons.swiss_fer.standard
+import src.addons.uk_frs.standard
+import src.addons.us_gaap.standard
 from src.core.standards.base import StandardRegistry
 from src.core.standards.pcg_france import PCGFrance
 

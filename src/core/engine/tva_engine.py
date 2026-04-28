@@ -78,6 +78,7 @@ def compute_tva_declaration(
     - Lignes avec vat_code renseigné → base HT
     """
     from sqlalchemy import func
+
     from src.core.models.account import Account
 
     result = TVADeclarationResult(periode_debut=periode_debut, periode_fin=periode_fin)

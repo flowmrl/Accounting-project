@@ -73,6 +73,7 @@ def company_create(
 ) -> None:
     """Crée une nouvelle société et charge le plan de comptes."""
     import uuid
+
     from src.core.models.company import Company
     from src.db.session import get_session
 
@@ -182,18 +183,17 @@ app.add_typer(std_app, name="standards")
 def standards_list() -> None:
     """Liste tous les référentiels comptables enregistrés."""
     # Import all addons
-    import src.addons.ifrs.standard
-    import src.addons.us_gaap.standard
     import src.addons.be_gaap.standard
-    import src.addons.german_hgb.standard
-    import src.addons.uk_frs.standard
-    import src.addons.swiss_fer.standard
-    import src.addons.spanish_pgc.standard
-    import src.addons.italian_oic.standard
     import src.addons.dutch_bw2.standard
-    import src.addons.polish_psr.standard
+    import src.addons.german_hgb.standard
+    import src.addons.ifrs.standard
+    import src.addons.italian_oic.standard
     import src.addons.luxembourg_gaap.standard
-
+    import src.addons.polish_psr.standard
+    import src.addons.spanish_pgc.standard
+    import src.addons.swiss_fer.standard
+    import src.addons.uk_frs.standard
+    import src.addons.us_gaap.standard
     from src.core.standards.base import StandardRegistry
     standards = StandardRegistry.list_all()
     table = Table("Code", "Nom", "Pays")
@@ -217,8 +217,8 @@ def fec_export(
     output: Path = typer.Option(Path("FEC.txt"), "--output", "-o"),
 ) -> None:
     """Exporte le Fichier des Écritures Comptables (FEC) — format DGFiP."""
-    from src.modules.tax.fec_export import write_fec_file
     from src.db.session import get_session
+    from src.modules.tax.fec_export import write_fec_file
 
     db = next(get_session())
     try:
@@ -239,6 +239,7 @@ def is_simulate(
 ) -> None:
     """Simule l'impôt sur les sociétés."""
     from decimal import Decimal
+
     from src.modules.tax.is_engine import compute_is
 
     result = compute_is(
