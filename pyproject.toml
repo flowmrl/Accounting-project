@@ -27,6 +27,11 @@ dependencies = [
   "httpx>=0.27.0",
   "rich>=13.9.0",
   "typer>=0.13.0",
+  # Facture électronique Factur-X (PDF/A-3 + XML EN 16931)
+  "reportlab>=4.0",
+  "pypdf>=4.0",
+  "lxml>=5.0",
+  "cffi>=1.0",
 ]
 
 [project.optional-dependencies]

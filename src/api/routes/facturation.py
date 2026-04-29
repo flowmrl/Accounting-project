@@ -1,4 +1,4 @@
-"""Facturation — devis, factures, avoirs, relances, balance âgée."""
+"""Facturation — devis, factures, avoirs, relances, balance âgée, Factur-X."""
 from __future__ import annotations
 
 import uuid
@@ -6,10 +6,12 @@ from datetime import date
 from decimal import Decimal
 
 from fastapi import APIRouter, Depends, HTTPException, Query
+from fastapi.responses import Response
 from pydantic import BaseModel
 from sqlalchemy.orm import Session
 
 from src.api.middleware.auth import get_current_user
+from src.core.models.company import Company
 from src.db.session import get_session
 from src.modules.facturation.models import DocumentStatus as InvoiceStatus
 from src.modules.facturation.models import DocumentType as InvoiceType
@@ -164,3 +166,146 @@ def aged_balance(
         )
         for r in rows
     ]
+
+
+@router.get(
+    "/{invoice_id}/facturx",
+    summary="Télécharger la facture au format Factur-X (PDF/A-3 + XML EN 16931)",
+    response_class=Response,
+    responses={200: {"content": {"application/pdf": {}}}},
+)
+def download_facturx(
+    invoice_id: str,
+    db: Session = Depends(get_session),
+    current_user: dict = Depends(get_current_user),
+) -> Response:
+    """Génère et retourne le fichier PDF/A-3 Factur-X pour une facture validée."""
+    company_id = current_user["company_id"]
+
+    invoice = db.query(Invoice).filter_by(id=invoice_id, company_id=company_id).first()
+    if not invoice:
+        raise HTTPException(status_code=404, detail="Facture non trouvée")
+
+    if invoice.document_type not in (InvoiceType.FACTURE, InvoiceType.AVOIR):
+        raise HTTPException(status_code=422, detail="Factur-X disponible uniquement pour les factures et avoirs")
+
+    if invoice.status == InvoiceStatus.BROUILLON:
+        raise HTTPException(status_code=422, detail="Validez la facture avant de générer le Factur-X")
+
+    company = db.query(Company).filter_by(id=company_id).first()
+    if not company:
+        raise HTTPException(status_code=404, detail="Société introuvable")
+
+    lines = [
+        {
+            "description": ln.description,
+            "quantity": ln.quantity,
+            "unit_price_ht": ln.unit_price_ht,
+            "vat_rate": ln.vat_rate,
+            "line_ht": ln.line_ht,
+            "line_tva": ln.line_tva,
+            "line_ttc": ln.line_ttc,
+            "unit_code": "C62",
+        }
+        for ln in invoice.lines
+    ]
+
+    from src.modules.facturation.facturx_pdf import generate_facturx
+
+    try:
+        pdf_bytes = generate_facturx(
+            invoice_number=invoice.number or invoice_id[:8],
+            issue_date=invoice.issue_date,
+            due_date=invoice.due_date,
+            seller_name=company.name,
+            seller_address=company.address or "",
+            seller_city=company.city or "",
+            seller_postal=company.zip_code or "",
+            seller_siret=company.siret or "",
+            seller_tva_intracom=company.tva_intracom,
+            buyer_name=invoice.customer_name,
+            buyer_address=invoice.customer_address,
+            buyer_city=None,
+            buyer_postal=None,
+            buyer_siren=invoice.customer_siren,
+            buyer_tva_intracom=invoice.customer_tva_intracom,
+            lines=lines,
+            currency=invoice.currency,
+            notes=invoice.notes,
+            is_credit_note=(invoice.document_type == InvoiceType.AVOIR),
+        )
+    except Exception as exc:
+        raise HTTPException(status_code=500, detail=f"Erreur génération Factur-X : {exc}") from exc
+
+    filename = f"factur-x-{invoice.number or invoice_id[:8]}.pdf"
+    return Response(
+        content=pdf_bytes,
+        media_type="application/pdf",
+        headers={"Content-Disposition": f'attachment; filename="{filename}"'},
+    )
+
+
+@router.get(
+    "/{invoice_id}/facturx/xml",
+    summary="Télécharger uniquement le XML Factur-X EN 16931",
+    response_class=Response,
+    responses={200: {"content": {"application/xml": {}}}},
+)
+def download_facturx_xml(
+    invoice_id: str,
+    db: Session = Depends(get_session),
+    current_user: dict = Depends(get_current_user),
+) -> Response:
+    """Retourne le XML CII Factur-X seul (sans le PDF) pour intégration EDI."""
+    company_id = current_user["company_id"]
+
+    invoice = db.query(Invoice).filter_by(id=invoice_id, company_id=company_id).first()
+    if not invoice:
+        raise HTTPException(status_code=404, detail="Facture non trouvée")
+
+    company = db.query(Company).filter_by(id=company_id).first()
+    if not company:
+        raise HTTPException(status_code=404, detail="Société introuvable")
+
+    lines = [
+        {
+            "description": ln.description,
+            "quantity": ln.quantity,
+            "unit_price_ht": ln.unit_price_ht,
+            "vat_rate": ln.vat_rate,
+            "line_ht": ln.line_ht,
+            "line_tva": ln.line_tva,
+            "line_ttc": ln.line_ttc,
+        }
+        for ln in invoice.lines
+    ]
+
+    from src.modules.facturation.facturx_xml import build_facturx_xml
+
+    xml_bytes = build_facturx_xml(
+        invoice_number=invoice.number or invoice_id[:8],
+        issue_date=invoice.issue_date,
+        due_date=invoice.due_date,
+        seller_name=company.name,
+        seller_siret=company.siret or "",
+        seller_address=company.address or "",
+        seller_city=company.city or "",
+        seller_postal=company.zip_code or "",
+        seller_tva_intracom=company.tva_intracom,
+        buyer_name=invoice.customer_name,
+        buyer_address=invoice.customer_address,
+        buyer_city=None,
+        buyer_postal=None,
+        buyer_siren=invoice.customer_siren,
+        buyer_tva_intracom=invoice.customer_tva_intracom,
+        lines=lines,
+        currency=invoice.currency,
+        notes=invoice.notes,
+        is_credit_note=(invoice.document_type == InvoiceType.AVOIR),
+    )
+
+    return Response(
+        content=xml_bytes,
+        media_type="application/xml",
+        headers={"Content-Disposition": f'attachment; filename="factur-x-{invoice.number or invoice_id[:8]}.xml"'},
+    )
