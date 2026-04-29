@@ -6,6 +6,7 @@ from fastapi.middleware.cors import CORSMiddleware
 
 from src.api.routes import (
     accounts,
+    achats,
     analytique,
     auth,
     companies,
@@ -70,6 +71,7 @@ def create_app() -> FastAPI:
     app.include_router(notes_frais.router,      prefix=prefix)
     app.include_router(paie.router,             prefix=prefix)
     app.include_router(ocr.router,              prefix=prefix)
+    app.include_router(achats.router,           prefix=prefix)
 
     @app.on_event("startup")
     async def _startup() -> None:
