@@ -71,6 +71,19 @@ def create_app() -> FastAPI:
     app.include_router(paie.router,             prefix=prefix)
     app.include_router(ocr.router,              prefix=prefix)
 
+    @app.on_event("startup")
+    async def _startup() -> None:
+        from src.core.services.seed import seed_admin
+        from src.db.session import get_session
+        db = next(get_session())
+        try:
+            created = seed_admin(db)
+            if created:
+                import logging
+                logging.getLogger("compta_pme").info("Admin créé : admin@compta-pme.fr / admin")
+        finally:
+            db.close()
+
     @app.get("/", tags=["Health"])
     async def root() -> dict:
         return {"status": "ok", "service": "Compta PME API", "version": "1.0.0"}

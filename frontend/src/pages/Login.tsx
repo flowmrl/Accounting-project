@@ -5,7 +5,7 @@ export const Login = () => (
     type="login"
     title="Compta PME"
     formProps={{
-      initialValues: { username: "admin", password: "admin" },
+      initialValues: { email: "admin@compta-pme.fr", password: "admin" },
     }}
   />
 );

@@ -4,6 +4,7 @@ from .currency import Currency
 from .fiscal_year import FiscalYear, FiscalYearStatus
 from .journal import Journal, JournalType
 from .journal_entry import EntryStatus, JournalEntry, JournalEntryLine
+from .user import User, UserCompanyRole, UserRole
 
 __all__ = [
     "Account", "AccountType", "AccountNature",
@@ -12,4 +13,5 @@ __all__ = [
     "JournalEntry", "JournalEntryLine", "EntryStatus",
     "Currency",
     "Company",
+    "User", "UserCompanyRole", "UserRole",
 ]

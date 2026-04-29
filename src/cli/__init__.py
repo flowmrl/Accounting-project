@@ -257,6 +257,130 @@ def is_simulate(
 
 
 # ---------------------------------------------------------------------------
+# User sub-app
+# ---------------------------------------------------------------------------
+
+user_app = typer.Typer(help="Gestion des utilisateurs.")
+app.add_typer(user_app, name="user")
+
+
+@user_app.command("create")
+def user_create(
+    email: str = typer.Option(..., "--email", "-e"),
+    full_name: str = typer.Option(..., "--name", "-n"),
+    password: str = typer.Option(..., "--password", "-p"),
+    superadmin: bool = typer.Option(False, "--superadmin"),
+) -> None:
+    """Crée un utilisateur."""
+    import uuid
+
+    from src.api.middleware.auth import hash_password
+    from src.core.models.user import User
+    from src.db.session import get_session
+
+    db = next(get_session())
+    try:
+        existing = db.query(User).filter(User.email == email).first()
+        if existing:
+            console.print(f"[red]✗ Email déjà utilisé : {email}[/red]", err=True)
+            raise typer.Exit(1)
+        user = User(
+            id=str(uuid.uuid4()),
+            email=email,
+            full_name=full_name,
+            hashed_password=hash_password(password),
+            is_superadmin=superadmin,
+        )
+        db.add(user)
+        db.commit()
+        console.print(f"[green]✓ Utilisateur créé : {email} (id={user.id[:8]}…)[/green]")
+    except typer.Exit:
+        raise
+    except Exception as exc:
+        db.rollback()
+        console.print(f"[red]✗ {exc}[/red]", err=True)
+        raise typer.Exit(1)
+    finally:
+        db.close()
+
+
+@user_app.command("list")
+def user_list() -> None:
+    """Liste tous les utilisateurs."""
+    from src.core.models.user import User
+    from src.db.session import get_session
+
+    db = next(get_session())
+    try:
+        users = db.query(User).all()
+        table = Table("ID", "Email", "Nom", "Actif", "Superadmin")
+        for u in users:
+            table.add_row(
+                str(u.id)[:8] + "…",
+                u.email,
+                u.full_name,
+                "[green]Oui[/green]" if u.is_active else "[red]Non[/red]",
+                "[yellow]Oui[/yellow]" if u.is_superadmin else "Non",
+            )
+        console.print(table)
+    finally:
+        db.close()
+
+
+@user_app.command("assign-role")
+def user_assign_role(
+    user_email: str = typer.Option(..., "--email", "-e"),
+    company_id: str = typer.Option(..., "--company-id", "-c"),
+    role: str = typer.Option("COMPTABLE", "--role", "-r", help="ADMIN|EXPERT_COMPTABLE|DAF|COMPTABLE|READONLY"),
+) -> None:
+    """Assigne un rôle à un utilisateur pour une société."""
+    import uuid
+
+    from src.core.models.user import User, UserCompanyRole, UserRole
+    from src.db.session import get_session
+
+    valid_roles = [r.value for r in UserRole]
+    if role not in valid_roles:
+        console.print(f"[red]✗ Rôle invalide. Valeurs : {', '.join(valid_roles)}[/red]", err=True)
+        raise typer.Exit(1)
+
+    db = next(get_session())
+    try:
+        user = db.query(User).filter(User.email == user_email).first()
+        if not user:
+            console.print(f"[red]✗ Utilisateur introuvable : {user_email}[/red]", err=True)
+            raise typer.Exit(1)
+
+        assoc = db.query(UserCompanyRole).filter(
+            UserCompanyRole.user_id == user.id,
+            UserCompanyRole.company_id == company_id,
+        ).first()
+
+        if assoc:
+            assoc.role = role
+            console.print(f"[green]✓ Rôle mis à jour : {user_email} → {role} sur {company_id[:8]}…[/green]")
+        else:
+            assoc = UserCompanyRole(
+                id=str(uuid.uuid4()),
+                user_id=user.id,
+                company_id=company_id,
+                role=role,
+            )
+            db.add(assoc)
+            console.print(f"[green]✓ Rôle assigné : {user_email} → {role} sur {company_id[:8]}…[/green]")
+
+        db.commit()
+    except typer.Exit:
+        raise
+    except Exception as exc:
+        db.rollback()
+        console.print(f"[red]✗ {exc}[/red]", err=True)
+        raise typer.Exit(1)
+    finally:
+        db.close()
+
+
+# ---------------------------------------------------------------------------
 # Server
 # ---------------------------------------------------------------------------
 

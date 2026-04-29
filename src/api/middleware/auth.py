@@ -1,4 +1,4 @@
-"""JWT Bearer authentication — stdlib HMAC (HS256) + passlib sha256_crypt."""
+"""JWT Bearer authentication — stdlib HMAC HS256 + passlib sha256_crypt."""
 from __future__ import annotations
 
 import base64
@@ -11,8 +11,10 @@ from typing import Any
 from fastapi import Depends, HTTPException, status
 from fastapi.security import OAuth2PasswordBearer
 from passlib.context import CryptContext
+from sqlalchemy.orm import Session
 
 from src.config import settings
+from src.db.session import get_session
 
 pwd_context = CryptContext(schemes=["sha256_crypt"], deprecated="auto")
 oauth2_scheme = OAuth2PasswordBearer(tokenUrl="/api/v1/auth/token")
@@ -72,10 +74,44 @@ def decode_token(token: str) -> dict[str, Any]:
         ) from exc
 
 
-async def get_current_user(token: str = Depends(oauth2_scheme)) -> dict[str, Any]:
+async def get_current_user(
+    token: str = Depends(oauth2_scheme),
+    db: Session = Depends(get_session),
+) -> dict[str, Any]:
+    from src.core.models.user import User
     payload = decode_token(token)
     user_id: str | None = payload.get("sub")
-    company_id: str | None = payload.get("company_id")
     if not user_id:
         raise HTTPException(status_code=status.HTTP_401_UNAUTHORIZED, detail="Token invalide")
-    return {"user_id": user_id, "company_id": company_id, "payload": payload}
+
+    user = db.query(User).filter(User.id == user_id, User.is_active.is_(True)).first()
+    if not user:
+        raise HTTPException(status_code=status.HTTP_401_UNAUTHORIZED, detail="Utilisateur introuvable")
+
+    return {
+        "user_id": user.id,
+        "email": user.email,
+        "full_name": user.full_name,
+        "is_superadmin": user.is_superadmin,
+        "roles": payload.get("roles", {}),
+        "payload": payload,
+    }
+
+
+def require_role(*roles: str):
+    """Dépendance FastAPI — vérifie que l'utilisateur a au moins un des rôles pour la société."""
+    async def _check(
+        company_id: str,
+        current_user: dict = Depends(get_current_user),
+    ) -> dict:
+        if current_user.get("is_superadmin"):
+            return current_user
+        user_roles: dict = current_user.get("roles", {})
+        role = user_roles.get(company_id)
+        if role not in roles:
+            raise HTTPException(
+                status_code=status.HTTP_403_FORBIDDEN,
+                detail=f"Rôle requis : {', '.join(roles)}",
+            )
+        return current_user
+    return _check
