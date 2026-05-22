@@ -1,0 +1,3247 @@
+[
+  {
+    "code": "1",
+    "name": "COMPTES DE CAPITAUX",
+    "account_type": "CAPITAUX",
+    "account_nature": "EQUITY",
+    "account_class": "1",
+    "parent_code": null,
+    "is_detail": false,
+    "is_reconcilable": false
+  },
+  {
+    "code": "10",
+    "name": "Capital et réserves",
+    "account_type": "CAPITAUX",
+    "account_nature": "EQUITY",
+    "account_class": "1",
+    "parent_code": "1",
+    "is_detail": false,
+    "is_reconcilable": false
+  },
+  {
+    "code": "101",
+    "name": "Capital",
+    "account_type": "CAPITAUX",
+    "account_nature": "EQUITY",
+    "account_class": "1",
+    "parent_code": "10",
+    "is_detail": false,
+    "is_reconcilable": false
+  },
+  {
+    "code": "1011",
+    "name": "Capital souscrit non appelé",
+    "account_type": "CAPITAUX",
+    "account_nature": "EQUITY",
+    "account_class": "1",
+    "parent_code": "101",
+    "is_detail": true,
+    "is_reconcilable": false
+  },
+  {
+    "code": "1012",
+    "name": "Capital souscrit appelé, non versé",
+    "account_type": "CAPITAUX",
+    "account_nature": "EQUITY",
+    "account_class": "1",
+    "parent_code": "101",
+    "is_detail": true,
+    "is_reconcilable": false
+  },
+  {
+    "code": "1013",
+    "name": "Capital souscrit appelé, versé",
+    "account_type": "CAPITAUX",
+    "account_nature": "EQUITY",
+    "account_class": "1",
+    "parent_code": "101",
+    "is_detail": true,
+    "is_reconcilable": false
+  },
+  {
+    "code": "104",
+    "name": "Primes liées au capital social",
+    "account_type": "CAPITAUX",
+    "account_nature": "EQUITY",
+    "account_class": "1",
+    "parent_code": "10",
+    "is_detail": false,
+    "is_reconcilable": false
+  },
+  {
+    "code": "1041",
+    "name": "Primes d'émission",
+    "account_type": "CAPITAUX",
+    "account_nature": "EQUITY",
+    "account_class": "1",
+    "parent_code": "104",
+    "is_detail": true,
+    "is_reconcilable": false
+  },
+  {
+    "code": "1042",
+    "name": "Primes de fusion",
+    "account_type": "CAPITAUX",
+    "account_nature": "EQUITY",
+    "account_class": "1",
+    "parent_code": "104",
+    "is_detail": true,
+    "is_reconcilable": false
+  },
+  {
+    "code": "1043",
+    "name": "Primes d'apport",
+    "account_type": "CAPITAUX",
+    "account_nature": "EQUITY",
+    "account_class": "1",
+    "parent_code": "104",
+    "is_detail": true,
+    "is_reconcilable": false
+  },
+  {
+    "code": "105",
+    "name": "Écarts de réévaluation",
+    "account_type": "CAPITAUX",
+    "account_nature": "EQUITY",
+    "account_class": "1",
+    "parent_code": "10",
+    "is_detail": true,
+    "is_reconcilable": false
+  },
+  {
+    "code": "106",
+    "name": "Réserves",
+    "account_type": "CAPITAUX",
+    "account_nature": "EQUITY",
+    "account_class": "1",
+    "parent_code": "10",
+    "is_detail": false,
+    "is_reconcilable": false
+  },
+  {
+    "code": "1061",
+    "name": "Réserve légale",
+    "account_type": "CAPITAUX",
+    "account_nature": "EQUITY",
+    "account_class": "1",
+    "parent_code": "106",
+    "is_detail": true,
+    "is_reconcilable": false
+  },
+  {
+    "code": "1062",
+    "name": "Réserves indisponibles",
+    "account_type": "CAPITAUX",
+    "account_nature": "EQUITY",
+    "account_class": "1",
+    "parent_code": "106",
+    "is_detail": true,
+    "is_reconcilable": false
+  },
+  {
+    "code": "1063",
+    "name": "Réserves statutaires ou contractuelles",
+    "account_type": "CAPITAUX",
+    "account_nature": "EQUITY",
+    "account_class": "1",
+    "parent_code": "106",
+    "is_detail": true,
+    "is_reconcilable": false
+  },
+  {
+    "code": "1064",
+    "name": "Réserves réglementées",
+    "account_type": "CAPITAUX",
+    "account_nature": "EQUITY",
+    "account_class": "1",
+    "parent_code": "106",
+    "is_detail": true,
+    "is_reconcilable": false
+  },
+  {
+    "code": "1068",
+    "name": "Autres réserves",
+    "account_type": "CAPITAUX",
+    "account_nature": "EQUITY",
+    "account_class": "1",
+    "parent_code": "106",
+    "is_detail": true,
+    "is_reconcilable": false
+  },
+  {
+    "code": "107",
+    "name": "Écart d'équivalence",
+    "account_type": "CAPITAUX",
+    "account_nature": "EQUITY",
+    "account_class": "1",
+    "parent_code": "10",
+    "is_detail": true,
+    "is_reconcilable": false
+  },
+  {
+    "code": "108",
+    "name": "Compte de l'exploitant",
+    "account_type": "CAPITAUX",
+    "account_nature": "EQUITY",
+    "account_class": "1",
+    "parent_code": "10",
+    "is_detail": true,
+    "is_reconcilable": false
+  },
+  {
+    "code": "109",
+    "name": "Actionnaires : capital souscrit non appelé",
+    "account_type": "CAPITAUX",
+    "account_nature": "ASSET",
+    "account_class": "1",
+    "parent_code": "10",
+    "is_detail": true,
+    "is_reconcilable": false
+  },
+  {
+    "code": "11",
+    "name": "Report à nouveau",
+    "account_type": "CAPITAUX",
+    "account_nature": "EQUITY",
+    "account_class": "1",
+    "parent_code": "1",
+    "is_detail": false,
+    "is_reconcilable": false
+  },
+  {
+    "code": "110",
+    "name": "Report à nouveau (solde créditeur)",
+    "account_type": "CAPITAUX",
+    "account_nature": "EQUITY",
+    "account_class": "1",
+    "parent_code": "11",
+    "is_detail": true,
+    "is_reconcilable": false
+  },
+  {
+    "code": "119",
+    "name": "Report à nouveau (solde débiteur)",
+    "account_type": "CAPITAUX",
+    "account_nature": "EQUITY",
+    "account_class": "1",
+    "parent_code": "11",
+    "is_detail": true,
+    "is_reconcilable": false
+  },
+  {
+    "code": "12",
+    "name": "Résultat de l'exercice",
+    "account_type": "CAPITAUX",
+    "account_nature": "EQUITY",
+    "account_class": "1",
+    "parent_code": "1",
+    "is_detail": false,
+    "is_reconcilable": false
+  },
+  {
+    "code": "120",
+    "name": "Résultat de l'exercice (bénéfice)",
+    "account_type": "CAPITAUX",
+    "account_nature": "EQUITY",
+    "account_class": "1",
+    "parent_code": "12",
+    "is_detail": true,
+    "is_reconcilable": false
+  },
+  {
+    "code": "129",
+    "name": "Résultat de l'exercice (perte)",
+    "account_type": "CAPITAUX",
+    "account_nature": "EQUITY",
+    "account_class": "1",
+    "parent_code": "12",
+    "is_detail": true,
+    "is_reconcilable": false
+  },
+  {
+    "code": "13",
+    "name": "Subventions d'investissement",
+    "account_type": "CAPITAUX",
+    "account_nature": "EQUITY",
+    "account_class": "1",
+    "parent_code": "1",
+    "is_detail": false,
+    "is_reconcilable": false
+  },
+  {
+    "code": "131",
+    "name": "Subventions d'équipement",
+    "account_type": "CAPITAUX",
+    "account_nature": "EQUITY",
+    "account_class": "1",
+    "parent_code": "13",
+    "is_detail": true,
+    "is_reconcilable": false
+  },
+  {
+    "code": "138",
+    "name": "Autres subventions d'investissement",
+    "account_type": "CAPITAUX",
+    "account_nature": "EQUITY",
+    "account_class": "1",
+    "parent_code": "13",
+    "is_detail": true,
+    "is_reconcilable": false
+  },
+  {
+    "code": "139",
+    "name": "Subventions d'investissement inscrites au compte de résultat",
+    "account_type": "CAPITAUX",
+    "account_nature": "EQUITY",
+    "account_class": "1",
+    "parent_code": "13",
+    "is_detail": true,
+    "is_reconcilable": false
+  },
+  {
+    "code": "14",
+    "name": "Provisions réglementées",
+    "account_type": "CAPITAUX",
+    "account_nature": "EQUITY",
+    "account_class": "1",
+    "parent_code": "1",
+    "is_detail": false,
+    "is_reconcilable": false
+  },
+  {
+    "code": "145",
+    "name": "Amortissements dérogatoires",
+    "account_type": "CAPITAUX",
+    "account_nature": "EQUITY",
+    "account_class": "1",
+    "parent_code": "14",
+    "is_detail": true,
+    "is_reconcilable": false
+  },
+  {
+    "code": "146",
+    "name": "Provisions spéciales de réévaluation",
+    "account_type": "CAPITAUX",
+    "account_nature": "EQUITY",
+    "account_class": "1",
+    "parent_code": "14",
+    "is_detail": true,
+    "is_reconcilable": false
+  },
+  {
+    "code": "148",
+    "name": "Autres provisions réglementées",
+    "account_type": "CAPITAUX",
+    "account_nature": "EQUITY",
+    "account_class": "1",
+    "parent_code": "14",
+    "is_detail": true,
+    "is_reconcilable": false
+  },
+  {
+    "code": "15",
+    "name": "Provisions pour risques et charges",
+    "account_type": "CAPITAUX",
+    "account_nature": "LIABILITY",
+    "account_class": "1",
+    "parent_code": "1",
+    "is_detail": false,
+    "is_reconcilable": false
+  },
+  {
+    "code": "151",
+    "name": "Provisions pour risques",
+    "account_type": "CAPITAUX",
+    "account_nature": "LIABILITY",
+    "account_class": "1",
+    "parent_code": "15",
+    "is_detail": true,
+    "is_reconcilable": false
+  },
+  {
+    "code": "153",
+    "name": "Provisions pour pensions et obligations similaires",
+    "account_type": "CAPITAUX",
+    "account_nature": "LIABILITY",
+    "account_class": "1",
+    "parent_code": "15",
+    "is_detail": true,
+    "is_reconcilable": false
+  },
+  {
+    "code": "154",
+    "name": "Provisions pour restructurations",
+    "account_type": "CAPITAUX",
+    "account_nature": "LIABILITY",
+    "account_class": "1",
+    "parent_code": "15",
+    "is_detail": true,
+    "is_reconcilable": false
+  },
+  {
+    "code": "155",
+    "name": "Provisions pour impôts",
+    "account_type": "CAPITAUX",
+    "account_nature": "LIABILITY",
+    "account_class": "1",
+    "parent_code": "15",
+    "is_detail": true,
+    "is_reconcilable": false
+  },
+  {
+    "code": "157",
+    "name": "Provisions pour charges à répartir sur plusieurs exercices",
+    "account_type": "CAPITAUX",
+    "account_nature": "LIABILITY",
+    "account_class": "1",
+    "parent_code": "15",
+    "is_detail": true,
+    "is_reconcilable": false
+  },
+  {
+    "code": "158",
+    "name": "Autres provisions pour charges",
+    "account_type": "CAPITAUX",
+    "account_nature": "LIABILITY",
+    "account_class": "1",
+    "parent_code": "15",
+    "is_detail": true,
+    "is_reconcilable": false
+  },
+  {
+    "code": "16",
+    "name": "Emprunts et dettes assimilées",
+    "account_type": "CAPITAUX",
+    "account_nature": "LIABILITY",
+    "account_class": "1",
+    "parent_code": "1",
+    "is_detail": false,
+    "is_reconcilable": false
+  },
+  {
+    "code": "161",
+    "name": "Emprunts obligataires convertibles",
+    "account_type": "CAPITAUX",
+    "account_nature": "LIABILITY",
+    "account_class": "1",
+    "parent_code": "16",
+    "is_detail": true,
+    "is_reconcilable": false
+  },
+  {
+    "code": "162",
+    "name": "Autres emprunts obligataires",
+    "account_type": "CAPITAUX",
+    "account_nature": "LIABILITY",
+    "account_class": "1",
+    "parent_code": "16",
+    "is_detail": true,
+    "is_reconcilable": false
+  },
+  {
+    "code": "163",
+    "name": "Emprunts auprès des établissements de crédit",
+    "account_type": "CAPITAUX",
+    "account_nature": "LIABILITY",
+    "account_class": "1",
+    "parent_code": "16",
+    "is_detail": true,
+    "is_reconcilable": false
+  },
+  {
+    "code": "164",
+    "name": "Emprunts auprès des associés",
+    "account_type": "CAPITAUX",
+    "account_nature": "LIABILITY",
+    "account_class": "1",
+    "parent_code": "16",
+    "is_detail": true,
+    "is_reconcilable": false
+  },
+  {
+    "code": "165",
+    "name": "Dépôts et cautionnements reçus",
+    "account_type": "CAPITAUX",
+    "account_nature": "LIABILITY",
+    "account_class": "1",
+    "parent_code": "16",
+    "is_detail": true,
+    "is_reconcilable": false
+  },
+  {
+    "code": "166",
+    "name": "Participation des salariés aux résultats",
+    "account_type": "CAPITAUX",
+    "account_nature": "LIABILITY",
+    "account_class": "1",
+    "parent_code": "16",
+    "is_detail": true,
+    "is_reconcilable": false
+  },
+  {
+    "code": "167",
+    "name": "Autres emprunts et dettes assimilées",
+    "account_type": "CAPITAUX",
+    "account_nature": "LIABILITY",
+    "account_class": "1",
+    "parent_code": "16",
+    "is_detail": true,
+    "is_reconcilable": false
+  },
+  {
+    "code": "168",
+    "name": "Intérêts courus sur emprunts",
+    "account_type": "CAPITAUX",
+    "account_nature": "LIABILITY",
+    "account_class": "1",
+    "parent_code": "16",
+    "is_detail": true,
+    "is_reconcilable": false
+  },
+  {
+    "code": "17",
+    "name": "Dettes rattachées à des participations",
+    "account_type": "CAPITAUX",
+    "account_nature": "LIABILITY",
+    "account_class": "1",
+    "parent_code": "1",
+    "is_detail": true,
+    "is_reconcilable": false
+  },
+  {
+    "code": "18",
+    "name": "Comptes de liaison des établissements",
+    "account_type": "CAPITAUX",
+    "account_nature": "EQUITY",
+    "account_class": "1",
+    "parent_code": "1",
+    "is_detail": true,
+    "is_reconcilable": false
+  },
+  {
+    "code": "2",
+    "name": "COMPTES D'IMMOBILISATIONS",
+    "account_type": "IMMOBILISATIONS",
+    "account_nature": "ASSET",
+    "account_class": "2",
+    "parent_code": null,
+    "is_detail": false,
+    "is_reconcilable": false
+  },
+  {
+    "code": "20",
+    "name": "Immobilisations incorporelles",
+    "account_type": "IMMOBILISATIONS",
+    "account_nature": "ASSET",
+    "account_class": "2",
+    "parent_code": "2",
+    "is_detail": false,
+    "is_reconcilable": false
+  },
+  {
+    "code": "201",
+    "name": "Frais d'établissement",
+    "account_type": "IMMOBILISATIONS",
+    "account_nature": "ASSET",
+    "account_class": "2",
+    "parent_code": "20",
+    "is_detail": true,
+    "is_reconcilable": false
+  },
+  {
+    "code": "203",
+    "name": "Frais de recherche et de développement",
+    "account_type": "IMMOBILISATIONS",
+    "account_nature": "ASSET",
+    "account_class": "2",
+    "parent_code": "20",
+    "is_detail": true,
+    "is_reconcilable": false
+  },
+  {
+    "code": "205",
+    "name": "Concessions, brevets, licences, logiciels, droits similaires",
+    "account_type": "IMMOBILISATIONS",
+    "account_nature": "ASSET",
+    "account_class": "2",
+    "parent_code": "20",
+    "is_detail": true,
+    "is_reconcilable": false
+  },
+  {
+    "code": "206",
+    "name": "Droit au bail",
+    "account_type": "IMMOBILISATIONS",
+    "account_nature": "ASSET",
+    "account_class": "2",
+    "parent_code": "20",
+    "is_detail": true,
+    "is_reconcilable": false
+  },
+  {
+    "code": "207",
+    "name": "Fonds commercial",
+    "account_type": "IMMOBILISATIONS",
+    "account_nature": "ASSET",
+    "account_class": "2",
+    "parent_code": "20",
+    "is_detail": true,
+    "is_reconcilable": false
+  },
+  {
+    "code": "208",
+    "name": "Autres immobilisations incorporelles",
+    "account_type": "IMMOBILISATIONS",
+    "account_nature": "ASSET",
+    "account_class": "2",
+    "parent_code": "20",
+    "is_detail": true,
+    "is_reconcilable": false
+  },
+  {
+    "code": "21",
+    "name": "Immobilisations corporelles",
+    "account_type": "IMMOBILISATIONS",
+    "account_nature": "ASSET",
+    "account_class": "2",
+    "parent_code": "2",
+    "is_detail": false,
+    "is_reconcilable": false
+  },
+  {
+    "code": "211",
+    "name": "Terrains",
+    "account_type": "IMMOBILISATIONS",
+    "account_nature": "ASSET",
+    "account_class": "2",
+    "parent_code": "21",
+    "is_detail": true,
+    "is_reconcilable": false
+  },
+  {
+    "code": "212",
+    "name": "Agencements et aménagements de terrains",
+    "account_type": "IMMOBILISATIONS",
+    "account_nature": "ASSET",
+    "account_class": "2",
+    "parent_code": "21",
+    "is_detail": true,
+    "is_reconcilable": false
+  },
+  {
+    "code": "213",
+    "name": "Constructions",
+    "account_type": "IMMOBILISATIONS",
+    "account_nature": "ASSET",
+    "account_class": "2",
+    "parent_code": "21",
+    "is_detail": false,
+    "is_reconcilable": false
+  },
+  {
+    "code": "2131",
+    "name": "Bâtiments",
+    "account_type": "IMMOBILISATIONS",
+    "account_nature": "ASSET",
+    "account_class": "2",
+    "parent_code": "213",
+    "is_detail": true,
+    "is_reconcilable": false
+  },
+  {
+    "code": "2135",
+    "name": "Installations générales, agencements, aménagements des constructions",
+    "account_type": "IMMOBILISATIONS",
+    "account_nature": "ASSET",
+    "account_class": "2",
+    "parent_code": "213",
+    "is_detail": true,
+    "is_reconcilable": false
+  },
+  {
+    "code": "215",
+    "name": "Installations techniques, matériel et outillage industriels",
+    "account_type": "IMMOBILISATIONS",
+    "account_nature": "ASSET",
+    "account_class": "2",
+    "parent_code": "21",
+    "is_detail": true,
+    "is_reconcilable": false
+  },
+  {
+    "code": "218",
+    "name": "Autres immobilisations corporelles",
+    "account_type": "IMMOBILISATIONS",
+    "account_nature": "ASSET",
+    "account_class": "2",
+    "parent_code": "21",
+    "is_detail": false,
+    "is_reconcilable": false
+  },
+  {
+    "code": "2181",
+    "name": "Installations générales, agencements divers",
+    "account_type": "IMMOBILISATIONS",
+    "account_nature": "ASSET",
+    "account_class": "2",
+    "parent_code": "218",
+    "is_detail": true,
+    "is_reconcilable": false
+  },
+  {
+    "code": "2182",
+    "name": "Matériel de transport",
+    "account_type": "IMMOBILISATIONS",
+    "account_nature": "ASSET",
+    "account_class": "2",
+    "parent_code": "218",
+    "is_detail": true,
+    "is_reconcilable": false
+  },
+  {
+    "code": "2183",
+    "name": "Matériel de bureau et informatique",
+    "account_type": "IMMOBILISATIONS",
+    "account_nature": "ASSET",
+    "account_class": "2",
+    "parent_code": "218",
+    "is_detail": true,
+    "is_reconcilable": false
+  },
+  {
+    "code": "2184",
+    "name": "Mobilier",
+    "account_type": "IMMOBILISATIONS",
+    "account_nature": "ASSET",
+    "account_class": "2",
+    "parent_code": "218",
+    "is_detail": true,
+    "is_reconcilable": false
+  },
+  {
+    "code": "23",
+    "name": "Immobilisations en cours",
+    "account_type": "IMMOBILISATIONS",
+    "account_nature": "ASSET",
+    "account_class": "2",
+    "parent_code": "2",
+    "is_detail": false,
+    "is_reconcilable": false
+  },
+  {
+    "code": "231",
+    "name": "Immobilisations corporelles en cours",
+    "account_type": "IMMOBILISATIONS",
+    "account_nature": "ASSET",
+    "account_class": "2",
+    "parent_code": "23",
+    "is_detail": true,
+    "is_reconcilable": false
+  },
+  {
+    "code": "232",
+    "name": "Immobilisations incorporelles en cours",
+    "account_type": "IMMOBILISATIONS",
+    "account_nature": "ASSET",
+    "account_class": "2",
+    "parent_code": "23",
+    "is_detail": true,
+    "is_reconcilable": false
+  },
+  {
+    "code": "238",
+    "name": "Avances et acomptes sur immobilisations corporelles",
+    "account_type": "IMMOBILISATIONS",
+    "account_nature": "ASSET",
+    "account_class": "2",
+    "parent_code": "23",
+    "is_detail": true,
+    "is_reconcilable": false
+  },
+  {
+    "code": "26",
+    "name": "Participations et créances rattachées",
+    "account_type": "IMMOBILISATIONS",
+    "account_nature": "ASSET",
+    "account_class": "2",
+    "parent_code": "2",
+    "is_detail": false,
+    "is_reconcilable": false
+  },
+  {
+    "code": "261",
+    "name": "Titres de participation",
+    "account_type": "IMMOBILISATIONS",
+    "account_nature": "ASSET",
+    "account_class": "2",
+    "parent_code": "26",
+    "is_detail": true,
+    "is_reconcilable": false
+  },
+  {
+    "code": "267",
+    "name": "Créances rattachées à des participations",
+    "account_type": "IMMOBILISATIONS",
+    "account_nature": "ASSET",
+    "account_class": "2",
+    "parent_code": "26",
+    "is_detail": true,
+    "is_reconcilable": false
+  },
+  {
+    "code": "27",
+    "name": "Autres immobilisations financières",
+    "account_type": "IMMOBILISATIONS",
+    "account_nature": "ASSET",
+    "account_class": "2",
+    "parent_code": "2",
+    "is_detail": false,
+    "is_reconcilable": false
+  },
+  {
+    "code": "271",
+    "name": "Titres immobilisés",
+    "account_type": "IMMOBILISATIONS",
+    "account_nature": "ASSET",
+    "account_class": "2",
+    "parent_code": "27",
+    "is_detail": true,
+    "is_reconcilable": false
+  },
+  {
+    "code": "274",
+    "name": "Prêts",
+    "account_type": "IMMOBILISATIONS",
+    "account_nature": "ASSET",
+    "account_class": "2",
+    "parent_code": "27",
+    "is_detail": true,
+    "is_reconcilable": false
+  },
+  {
+    "code": "275",
+    "name": "Dépôts et cautionnements versés",
+    "account_type": "IMMOBILISATIONS",
+    "account_nature": "ASSET",
+    "account_class": "2",
+    "parent_code": "27",
+    "is_detail": true,
+    "is_reconcilable": false
+  },
+  {
+    "code": "276",
+    "name": "Autres créances immobilisées",
+    "account_type": "IMMOBILISATIONS",
+    "account_nature": "ASSET",
+    "account_class": "2",
+    "parent_code": "27",
+    "is_detail": true,
+    "is_reconcilable": false
+  },
+  {
+    "code": "28",
+    "name": "Amortissements des immobilisations",
+    "account_type": "IMMOBILISATIONS",
+    "account_nature": "CONTRA_ASSET",
+    "account_class": "2",
+    "parent_code": "2",
+    "is_detail": false,
+    "is_reconcilable": false
+  },
+  {
+    "code": "280",
+    "name": "Amortissements des immobilisations incorporelles",
+    "account_type": "IMMOBILISATIONS",
+    "account_nature": "CONTRA_ASSET",
+    "account_class": "2",
+    "parent_code": "28",
+    "is_detail": false,
+    "is_reconcilable": false
+  },
+  {
+    "code": "2801",
+    "name": "Amortissements des frais d'établissement",
+    "account_type": "IMMOBILISATIONS",
+    "account_nature": "CONTRA_ASSET",
+    "account_class": "2",
+    "parent_code": "280",
+    "is_detail": true,
+    "is_reconcilable": false
+  },
+  {
+    "code": "2803",
+    "name": "Amortissements des frais de recherche et développement",
+    "account_type": "IMMOBILISATIONS",
+    "account_nature": "CONTRA_ASSET",
+    "account_class": "2",
+    "parent_code": "280",
+    "is_detail": true,
+    "is_reconcilable": false
+  },
+  {
+    "code": "2805",
+    "name": "Amortissements des concessions, brevets, licences, logiciels",
+    "account_type": "IMMOBILISATIONS",
+    "account_nature": "CONTRA_ASSET",
+    "account_class": "2",
+    "parent_code": "280",
+    "is_detail": true,
+    "is_reconcilable": false
+  },
+  {
+    "code": "2807",
+    "name": "Amortissements du fonds commercial",
+    "account_type": "IMMOBILISATIONS",
+    "account_nature": "CONTRA_ASSET",
+    "account_class": "2",
+    "parent_code": "280",
+    "is_detail": true,
+    "is_reconcilable": false
+  },
+  {
+    "code": "281",
+    "name": "Amortissements des immobilisations corporelles",
+    "account_type": "IMMOBILISATIONS",
+    "account_nature": "CONTRA_ASSET",
+    "account_class": "2",
+    "parent_code": "28",
+    "is_detail": false,
+    "is_reconcilable": false
+  },
+  {
+    "code": "2812",
+    "name": "Amortissements des agencements de terrains",
+    "account_type": "IMMOBILISATIONS",
+    "account_nature": "CONTRA_ASSET",
+    "account_class": "2",
+    "parent_code": "281",
+    "is_detail": true,
+    "is_reconcilable": false
+  },
+  {
+    "code": "2813",
+    "name": "Amortissements des constructions",
+    "account_type": "IMMOBILISATIONS",
+    "account_nature": "CONTRA_ASSET",
+    "account_class": "2",
+    "parent_code": "281",
+    "is_detail": true,
+    "is_reconcilable": false
+  },
+  {
+    "code": "2815",
+    "name": "Amortissements des installations techniques",
+    "account_type": "IMMOBILISATIONS",
+    "account_nature": "CONTRA_ASSET",
+    "account_class": "2",
+    "parent_code": "281",
+    "is_detail": true,
+    "is_reconcilable": false
+  },
+  {
+    "code": "2818",
+    "name": "Amortissements des autres immobilisations corporelles",
+    "account_type": "IMMOBILISATIONS",
+    "account_nature": "CONTRA_ASSET",
+    "account_class": "2",
+    "parent_code": "281",
+    "is_detail": true,
+    "is_reconcilable": false
+  },
+  {
+    "code": "29",
+    "name": "Dépréciations des immobilisations",
+    "account_type": "IMMOBILISATIONS",
+    "account_nature": "CONTRA_ASSET",
+    "account_class": "2",
+    "parent_code": "2",
+    "is_detail": false,
+    "is_reconcilable": false
+  },
+  {
+    "code": "290",
+    "name": "Dépréciations des immobilisations incorporelles",
+    "account_type": "IMMOBILISATIONS",
+    "account_nature": "CONTRA_ASSET",
+    "account_class": "2",
+    "parent_code": "29",
+    "is_detail": true,
+    "is_reconcilable": false
+  },
+  {
+    "code": "291",
+    "name": "Dépréciations des immobilisations corporelles",
+    "account_type": "IMMOBILISATIONS",
+    "account_nature": "CONTRA_ASSET",
+    "account_class": "2",
+    "parent_code": "29",
+    "is_detail": true,
+    "is_reconcilable": false
+  },
+  {
+    "code": "296",
+    "name": "Dépréciations des participations",
+    "account_type": "IMMOBILISATIONS",
+    "account_nature": "CONTRA_ASSET",
+    "account_class": "2",
+    "parent_code": "29",
+    "is_detail": true,
+    "is_reconcilable": false
+  },
+  {
+    "code": "297",
+    "name": "Dépréciations des autres immobilisations financières",
+    "account_type": "IMMOBILISATIONS",
+    "account_nature": "CONTRA_ASSET",
+    "account_class": "2",
+    "parent_code": "29",
+    "is_detail": true,
+    "is_reconcilable": false
+  },
+  {
+    "code": "3",
+    "name": "COMPTES DE STOCKS ET EN-COURS",
+    "account_type": "STOCKS",
+    "account_nature": "ASSET",
+    "account_class": "3",
+    "parent_code": null,
+    "is_detail": false,
+    "is_reconcilable": false
+  },
+  {
+    "code": "31",
+    "name": "Matières premières et fournitures",
+    "account_type": "STOCKS",
+    "account_nature": "ASSET",
+    "account_class": "3",
+    "parent_code": "3",
+    "is_detail": true,
+    "is_reconcilable": false
+  },
+  {
+    "code": "32",
+    "name": "Autres approvisionnements",
+    "account_type": "STOCKS",
+    "account_nature": "ASSET",
+    "account_class": "3",
+    "parent_code": "3",
+    "is_detail": true,
+    "is_reconcilable": false
+  },
+  {
+    "code": "33",
+    "name": "En-cours de production de biens",
+    "account_type": "STOCKS",
+    "account_nature": "ASSET",
+    "account_class": "3",
+    "parent_code": "3",
+    "is_detail": true,
+    "is_reconcilable": false
+  },
+  {
+    "code": "34",
+    "name": "En-cours de production de services",
+    "account_type": "STOCKS",
+    "account_nature": "ASSET",
+    "account_class": "3",
+    "parent_code": "3",
+    "is_detail": true,
+    "is_reconcilable": false
+  },
+  {
+    "code": "35",
+    "name": "Stocks de produits",
+    "account_type": "STOCKS",
+    "account_nature": "ASSET",
+    "account_class": "3",
+    "parent_code": "3",
+    "is_detail": false,
+    "is_reconcilable": false
+  },
+  {
+    "code": "351",
+    "name": "Produits intermédiaires",
+    "account_type": "STOCKS",
+    "account_nature": "ASSET",
+    "account_class": "3",
+    "parent_code": "35",
+    "is_detail": true,
+    "is_reconcilable": false
+  },
+  {
+    "code": "355",
+    "name": "Produits finis",
+    "account_type": "STOCKS",
+    "account_nature": "ASSET",
+    "account_class": "3",
+    "parent_code": "35",
+    "is_detail": true,
+    "is_reconcilable": false
+  },
+  {
+    "code": "37",
+    "name": "Stocks de marchandises",
+    "account_type": "STOCKS",
+    "account_nature": "ASSET",
+    "account_class": "3",
+    "parent_code": "3",
+    "is_detail": true,
+    "is_reconcilable": false
+  },
+  {
+    "code": "39",
+    "name": "Dépréciations des stocks et en-cours",
+    "account_type": "STOCKS",
+    "account_nature": "CONTRA_ASSET",
+    "account_class": "3",
+    "parent_code": "3",
+    "is_detail": true,
+    "is_reconcilable": false
+  },
+  {
+    "code": "4",
+    "name": "COMPTES DE TIERS",
+    "account_type": "TIERS",
+    "account_nature": "LIABILITY",
+    "account_class": "4",
+    "parent_code": null,
+    "is_detail": false,
+    "is_reconcilable": false
+  },
+  {
+    "code": "40",
+    "name": "Fournisseurs et comptes rattachés",
+    "account_type": "TIERS",
+    "account_nature": "LIABILITY",
+    "account_class": "4",
+    "parent_code": "4",
+    "is_detail": false,
+    "is_reconcilable": false
+  },
+  {
+    "code": "401",
+    "name": "Fournisseurs",
+    "account_type": "TIERS",
+    "account_nature": "LIABILITY",
+    "account_class": "4",
+    "parent_code": "40",
+    "is_detail": true,
+    "is_reconcilable": true
+  },
+  {
+    "code": "4011",
+    "name": "Fournisseurs — achats de biens et prestations de services",
+    "account_type": "TIERS",
+    "account_nature": "LIABILITY",
+    "account_class": "4",
+    "parent_code": "401",
+    "is_detail": true,
+    "is_reconcilable": true
+  },
+  {
+    "code": "402",
+    "name": "Fournisseurs — effets à payer",
+    "account_type": "TIERS",
+    "account_nature": "LIABILITY",
+    "account_class": "4",
+    "parent_code": "40",
+    "is_detail": true,
+    "is_reconcilable": true
+  },
+  {
+    "code": "403",
+    "name": "Fournisseurs — retenues de garantie",
+    "account_type": "TIERS",
+    "account_nature": "LIABILITY",
+    "account_class": "4",
+    "parent_code": "40",
+    "is_detail": true,
+    "is_reconcilable": false
+  },
+  {
+    "code": "404",
+    "name": "Fournisseurs d'immobilisations",
+    "account_type": "TIERS",
+    "account_nature": "LIABILITY",
+    "account_class": "4",
+    "parent_code": "40",
+    "is_detail": true,
+    "is_reconcilable": true
+  },
+  {
+    "code": "408",
+    "name": "Fournisseurs — factures non parvenues",
+    "account_type": "TIERS",
+    "account_nature": "LIABILITY",
+    "account_class": "4",
+    "parent_code": "40",
+    "is_detail": true,
+    "is_reconcilable": false
+  },
+  {
+    "code": "409",
+    "name": "Fournisseurs débiteurs",
+    "account_type": "TIERS",
+    "account_nature": "ASSET",
+    "account_class": "4",
+    "parent_code": "40",
+    "is_detail": false,
+    "is_reconcilable": false
+  },
+  {
+    "code": "4091",
+    "name": "Fournisseurs — avances et acomptes versés",
+    "account_type": "TIERS",
+    "account_nature": "ASSET",
+    "account_class": "4",
+    "parent_code": "409",
+    "is_detail": true,
+    "is_reconcilable": false
+  },
+  {
+    "code": "41",
+    "name": "Clients et comptes rattachés",
+    "account_type": "TIERS",
+    "account_nature": "ASSET",
+    "account_class": "4",
+    "parent_code": "4",
+    "is_detail": false,
+    "is_reconcilable": false
+  },
+  {
+    "code": "411",
+    "name": "Clients",
+    "account_type": "TIERS",
+    "account_nature": "ASSET",
+    "account_class": "4",
+    "parent_code": "41",
+    "is_detail": true,
+    "is_reconcilable": true
+  },
+  {
+    "code": "4111",
+    "name": "Clients — ventes de biens et prestations de services",
+    "account_type": "TIERS",
+    "account_nature": "ASSET",
+    "account_class": "4",
+    "parent_code": "411",
+    "is_detail": true,
+    "is_reconcilable": true
+  },
+  {
+    "code": "412",
+    "name": "Clients — effets à recevoir",
+    "account_type": "TIERS",
+    "account_nature": "ASSET",
+    "account_class": "4",
+    "parent_code": "41",
+    "is_detail": true,
+    "is_reconcilable": true
+  },
+  {
+    "code": "413",
+    "name": "Clients — effets remis à l'escompte non échus",
+    "account_type": "TIERS",
+    "account_nature": "ASSET",
+    "account_class": "4",
+    "parent_code": "41",
+    "is_detail": true,
+    "is_reconcilable": false
+  },
+  {
+    "code": "416",
+    "name": "Clients douteux ou litigieux",
+    "account_type": "TIERS",
+    "account_nature": "ASSET",
+    "account_class": "4",
+    "parent_code": "41",
+    "is_detail": true,
+    "is_reconcilable": true
+  },
+  {
+    "code": "418",
+    "name": "Clients — produits non encore facturés",
+    "account_type": "TIERS",
+    "account_nature": "ASSET",
+    "account_class": "4",
+    "parent_code": "41",
+    "is_detail": true,
+    "is_reconcilable": false
+  },
+  {
+    "code": "419",
+    "name": "Clients créditeurs",
+    "account_type": "TIERS",
+    "account_nature": "LIABILITY",
+    "account_class": "4",
+    "parent_code": "41",
+    "is_detail": false,
+    "is_reconcilable": false
+  },
+  {
+    "code": "4191",
+    "name": "Clients — avances et acomptes reçus",
+    "account_type": "TIERS",
+    "account_nature": "LIABILITY",
+    "account_class": "4",
+    "parent_code": "419",
+    "is_detail": true,
+    "is_reconcilable": false
+  },
+  {
+    "code": "42",
+    "name": "Personnel et comptes rattachés",
+    "account_type": "TIERS",
+    "account_nature": "LIABILITY",
+    "account_class": "4",
+    "parent_code": "4",
+    "is_detail": false,
+    "is_reconcilable": false
+  },
+  {
+    "code": "421",
+    "name": "Personnel — rémunérations dues",
+    "account_type": "TIERS",
+    "account_nature": "LIABILITY",
+    "account_class": "4",
+    "parent_code": "42",
+    "is_detail": true,
+    "is_reconcilable": false
+  },
+  {
+    "code": "425",
+    "name": "Personnel — avances et acomptes",
+    "account_type": "TIERS",
+    "account_nature": "ASSET",
+    "account_class": "4",
+    "parent_code": "42",
+    "is_detail": true,
+    "is_reconcilable": false
+  },
+  {
+    "code": "428",
+    "name": "Personnel — charges à payer et produits à recevoir",
+    "account_type": "TIERS",
+    "account_nature": "LIABILITY",
+    "account_class": "4",
+    "parent_code": "42",
+    "is_detail": true,
+    "is_reconcilable": false
+  },
+  {
+    "code": "43",
+    "name": "Sécurité sociale et autres organismes sociaux",
+    "account_type": "TIERS",
+    "account_nature": "LIABILITY",
+    "account_class": "4",
+    "parent_code": "4",
+    "is_detail": false,
+    "is_reconcilable": false
+  },
+  {
+    "code": "431",
+    "name": "Sécurité sociale",
+    "account_type": "TIERS",
+    "account_nature": "LIABILITY",
+    "account_class": "4",
+    "parent_code": "43",
+    "is_detail": true,
+    "is_reconcilable": false
+  },
+  {
+    "code": "437",
+    "name": "Autres organismes sociaux",
+    "account_type": "TIERS",
+    "account_nature": "LIABILITY",
+    "account_class": "4",
+    "parent_code": "43",
+    "is_detail": true,
+    "is_reconcilable": false
+  },
+  {
+    "code": "438",
+    "name": "Organismes sociaux — charges à payer",
+    "account_type": "TIERS",
+    "account_nature": "LIABILITY",
+    "account_class": "4",
+    "parent_code": "43",
+    "is_detail": true,
+    "is_reconcilable": false
+  },
+  {
+    "code": "44",
+    "name": "État et autres collectivités publiques",
+    "account_type": "TIERS",
+    "account_nature": "LIABILITY",
+    "account_class": "4",
+    "parent_code": "4",
+    "is_detail": false,
+    "is_reconcilable": false
+  },
+  {
+    "code": "441",
+    "name": "État — subventions à recevoir",
+    "account_type": "TIERS",
+    "account_nature": "ASSET",
+    "account_class": "4",
+    "parent_code": "44",
+    "is_detail": true,
+    "is_reconcilable": false
+  },
+  {
+    "code": "444",
+    "name": "État — impôts sur les bénéfices",
+    "account_type": "TIERS",
+    "account_nature": "LIABILITY",
+    "account_class": "4",
+    "parent_code": "44",
+    "is_detail": true,
+    "is_reconcilable": false
+  },
+  {
+    "code": "445",
+    "name": "État — taxes sur le chiffre d'affaires",
+    "account_type": "TIERS",
+    "account_nature": "LIABILITY",
+    "account_class": "4",
+    "parent_code": "44",
+    "is_detail": false,
+    "is_reconcilable": false
+  },
+  {
+    "code": "4452",
+    "name": "TVA due intracommunautaire",
+    "account_type": "TIERS",
+    "account_nature": "LIABILITY",
+    "account_class": "4",
+    "parent_code": "445",
+    "is_detail": true,
+    "is_reconcilable": false,
+    "vat_code": "TVA_IC"
+  },
+  {
+    "code": "4455",
+    "name": "Taxes sur le chiffre d'affaires à décaisser",
+    "account_type": "TIERS",
+    "account_nature": "LIABILITY",
+    "account_class": "4",
+    "parent_code": "445",
+    "is_detail": true,
+    "is_reconcilable": false,
+    "vat_code": "TVA_DUE"
+  },
+  {
+    "code": "4456",
+    "name": "Taxes sur le chiffre d'affaires déductibles",
+    "account_type": "TIERS",
+    "account_nature": "ASSET",
+    "account_class": "4",
+    "parent_code": "445",
+    "is_detail": false,
+    "is_reconcilable": false
+  },
+  {
+    "code": "44562",
+    "name": "TVA sur immobilisations",
+    "account_type": "TIERS",
+    "account_nature": "ASSET",
+    "account_class": "4",
+    "parent_code": "4456",
+    "is_detail": true,
+    "is_reconcilable": false,
+    "vat_code": "TVA_DEDUC_IMMO"
+  },
+  {
+    "code": "44566",
+    "name": "TVA déductible sur autres biens et services",
+    "account_type": "TIERS",
+    "account_nature": "ASSET",
+    "account_class": "4",
+    "parent_code": "4456",
+    "is_detail": true,
+    "is_reconcilable": false,
+    "vat_code": "TVA_DEDUC"
+  },
+  {
+    "code": "44567",
+    "name": "Crédit de TVA",
+    "account_type": "TIERS",
+    "account_nature": "ASSET",
+    "account_class": "4",
+    "parent_code": "4456",
+    "is_detail": true,
+    "is_reconcilable": false
+  },
+  {
+    "code": "4457",
+    "name": "Taxes sur le chiffre d'affaires collectées",
+    "account_type": "TIERS",
+    "account_nature": "LIABILITY",
+    "account_class": "4",
+    "parent_code": "445",
+    "is_detail": false,
+    "is_reconcilable": false
+  },
+  {
+    "code": "44571",
+    "name": "TVA collectée",
+    "account_type": "TIERS",
+    "account_nature": "LIABILITY",
+    "account_class": "4",
+    "parent_code": "4457",
+    "is_detail": true,
+    "is_reconcilable": false,
+    "vat_code": "TVA_COLL"
+  },
+  {
+    "code": "4458",
+    "name": "TVA à régulariser ou en attente",
+    "account_type": "TIERS",
+    "account_nature": "LIABILITY",
+    "account_class": "4",
+    "parent_code": "445",
+    "is_detail": true,
+    "is_reconcilable": false
+  },
+  {
+    "code": "447",
+    "name": "Autres impôts, taxes et versements assimilés",
+    "account_type": "TIERS",
+    "account_nature": "LIABILITY",
+    "account_class": "4",
+    "parent_code": "44",
+    "is_detail": true,
+    "is_reconcilable": false
+  },
+  {
+    "code": "448",
+    "name": "État — charges à payer et produits à recevoir",
+    "account_type": "TIERS",
+    "account_nature": "LIABILITY",
+    "account_class": "4",
+    "parent_code": "44",
+    "is_detail": true,
+    "is_reconcilable": false
+  },
+  {
+    "code": "45",
+    "name": "Groupe et associés",
+    "account_type": "TIERS",
+    "account_nature": "LIABILITY",
+    "account_class": "4",
+    "parent_code": "4",
+    "is_detail": false,
+    "is_reconcilable": false
+  },
+  {
+    "code": "451",
+    "name": "Groupe",
+    "account_type": "TIERS",
+    "account_nature": "LIABILITY",
+    "account_class": "4",
+    "parent_code": "45",
+    "is_detail": true,
+    "is_reconcilable": true
+  },
+  {
+    "code": "455",
+    "name": "Associés — comptes courants",
+    "account_type": "TIERS",
+    "account_nature": "LIABILITY",
+    "account_class": "4",
+    "parent_code": "45",
+    "is_detail": true,
+    "is_reconcilable": true
+  },
+  {
+    "code": "457",
+    "name": "Associés — dividendes à payer",
+    "account_type": "TIERS",
+    "account_nature": "LIABILITY",
+    "account_class": "4",
+    "parent_code": "45",
+    "is_detail": true,
+    "is_reconcilable": false
+  },
+  {
+    "code": "46",
+    "name": "Débiteurs divers et créditeurs divers",
+    "account_type": "TIERS",
+    "account_nature": "ASSET",
+    "account_class": "4",
+    "parent_code": "4",
+    "is_detail": false,
+    "is_reconcilable": false
+  },
+  {
+    "code": "461",
+    "name": "Débiteurs divers",
+    "account_type": "TIERS",
+    "account_nature": "ASSET",
+    "account_class": "4",
+    "parent_code": "46",
+    "is_detail": true,
+    "is_reconcilable": true
+  },
+  {
+    "code": "462",
+    "name": "Créditeurs divers",
+    "account_type": "TIERS",
+    "account_nature": "LIABILITY",
+    "account_class": "4",
+    "parent_code": "46",
+    "is_detail": true,
+    "is_reconcilable": true
+  },
+  {
+    "code": "467",
+    "name": "Autres comptes débiteurs ou créditeurs",
+    "account_type": "TIERS",
+    "account_nature": "ASSET",
+    "account_class": "4",
+    "parent_code": "46",
+    "is_detail": true,
+    "is_reconcilable": false
+  },
+  {
+    "code": "47",
+    "name": "Comptes transitoires ou d'attente",
+    "account_type": "TIERS",
+    "account_nature": "ASSET",
+    "account_class": "4",
+    "parent_code": "4",
+    "is_detail": false,
+    "is_reconcilable": false
+  },
+  {
+    "code": "471",
+    "name": "Comptes d'attente",
+    "account_type": "TIERS",
+    "account_nature": "ASSET",
+    "account_class": "4",
+    "parent_code": "47",
+    "is_detail": true,
+    "is_reconcilable": false
+  },
+  {
+    "code": "476",
+    "name": "Différences de conversion — actif",
+    "account_type": "TIERS",
+    "account_nature": "ASSET",
+    "account_class": "4",
+    "parent_code": "47",
+    "is_detail": true,
+    "is_reconcilable": false
+  },
+  {
+    "code": "477",
+    "name": "Différences de conversion — passif",
+    "account_type": "TIERS",
+    "account_nature": "LIABILITY",
+    "account_class": "4",
+    "parent_code": "47",
+    "is_detail": true,
+    "is_reconcilable": false
+  },
+  {
+    "code": "48",
+    "name": "Comptes de régularisation",
+    "account_type": "TIERS",
+    "account_nature": "ASSET",
+    "account_class": "4",
+    "parent_code": "4",
+    "is_detail": false,
+    "is_reconcilable": false
+  },
+  {
+    "code": "486",
+    "name": "Charges constatées d'avance",
+    "account_type": "TIERS",
+    "account_nature": "ASSET",
+    "account_class": "4",
+    "parent_code": "48",
+    "is_detail": true,
+    "is_reconcilable": false
+  },
+  {
+    "code": "487",
+    "name": "Produits constatés d'avance",
+    "account_type": "TIERS",
+    "account_nature": "LIABILITY",
+    "account_class": "4",
+    "parent_code": "48",
+    "is_detail": true,
+    "is_reconcilable": false
+  },
+  {
+    "code": "49",
+    "name": "Dépréciations des comptes de tiers",
+    "account_type": "TIERS",
+    "account_nature": "CONTRA_ASSET",
+    "account_class": "4",
+    "parent_code": "4",
+    "is_detail": false,
+    "is_reconcilable": false
+  },
+  {
+    "code": "491",
+    "name": "Dépréciation des comptes clients",
+    "account_type": "TIERS",
+    "account_nature": "CONTRA_ASSET",
+    "account_class": "4",
+    "parent_code": "49",
+    "is_detail": true,
+    "is_reconcilable": false
+  },
+  {
+    "code": "496",
+    "name": "Dépréciation des comptes de débiteurs divers",
+    "account_type": "TIERS",
+    "account_nature": "CONTRA_ASSET",
+    "account_class": "4",
+    "parent_code": "49",
+    "is_detail": true,
+    "is_reconcilable": false
+  },
+  {
+    "code": "5",
+    "name": "COMPTES FINANCIERS",
+    "account_type": "FINANCIER",
+    "account_nature": "ASSET",
+    "account_class": "5",
+    "parent_code": null,
+    "is_detail": false,
+    "is_reconcilable": false
+  },
+  {
+    "code": "50",
+    "name": "Valeurs mobilières de placement",
+    "account_type": "FINANCIER",
+    "account_nature": "ASSET",
+    "account_class": "5",
+    "parent_code": "5",
+    "is_detail": false,
+    "is_reconcilable": false
+  },
+  {
+    "code": "503",
+    "name": "Actions",
+    "account_type": "FINANCIER",
+    "account_nature": "ASSET",
+    "account_class": "5",
+    "parent_code": "50",
+    "is_detail": true,
+    "is_reconcilable": false
+  },
+  {
+    "code": "506",
+    "name": "Obligations",
+    "account_type": "FINANCIER",
+    "account_nature": "ASSET",
+    "account_class": "5",
+    "parent_code": "50",
+    "is_detail": true,
+    "is_reconcilable": false
+  },
+  {
+    "code": "508",
+    "name": "Autres valeurs mobilières de placement",
+    "account_type": "FINANCIER",
+    "account_nature": "ASSET",
+    "account_class": "5",
+    "parent_code": "50",
+    "is_detail": true,
+    "is_reconcilable": false
+  },
+  {
+    "code": "51",
+    "name": "Banques, établissements de crédit et assimilés",
+    "account_type": "FINANCIER",
+    "account_nature": "ASSET",
+    "account_class": "5",
+    "parent_code": "5",
+    "is_detail": false,
+    "is_reconcilable": false
+  },
+  {
+    "code": "511",
+    "name": "Valeurs à l'encaissement",
+    "account_type": "FINANCIER",
+    "account_nature": "ASSET",
+    "account_class": "5",
+    "parent_code": "51",
+    "is_detail": true,
+    "is_reconcilable": false
+  },
+  {
+    "code": "512",
+    "name": "Banques",
+    "account_type": "FINANCIER",
+    "account_nature": "ASSET",
+    "account_class": "5",
+    "parent_code": "51",
+    "is_detail": true,
+    "is_reconcilable": true
+  },
+  {
+    "code": "514",
+    "name": "Chèques postaux (CCP)",
+    "account_type": "FINANCIER",
+    "account_nature": "ASSET",
+    "account_class": "5",
+    "parent_code": "51",
+    "is_detail": true,
+    "is_reconcilable": true
+  },
+  {
+    "code": "517",
+    "name": "Autres organismes financiers",
+    "account_type": "FINANCIER",
+    "account_nature": "ASSET",
+    "account_class": "5",
+    "parent_code": "51",
+    "is_detail": true,
+    "is_reconcilable": false
+  },
+  {
+    "code": "518",
+    "name": "Intérêts courus sur comptes financiers",
+    "account_type": "FINANCIER",
+    "account_nature": "ASSET",
+    "account_class": "5",
+    "parent_code": "51",
+    "is_detail": true,
+    "is_reconcilable": false
+  },
+  {
+    "code": "519",
+    "name": "Concours bancaires courants",
+    "account_type": "FINANCIER",
+    "account_nature": "LIABILITY",
+    "account_class": "5",
+    "parent_code": "51",
+    "is_detail": true,
+    "is_reconcilable": false
+  },
+  {
+    "code": "53",
+    "name": "Caisse",
+    "account_type": "FINANCIER",
+    "account_nature": "ASSET",
+    "account_class": "5",
+    "parent_code": "5",
+    "is_detail": false,
+    "is_reconcilable": false
+  },
+  {
+    "code": "530",
+    "name": "Caisse siège social",
+    "account_type": "FINANCIER",
+    "account_nature": "ASSET",
+    "account_class": "5",
+    "parent_code": "53",
+    "is_detail": true,
+    "is_reconcilable": false
+  },
+  {
+    "code": "531",
+    "name": "Caisse monnaies étrangères",
+    "account_type": "FINANCIER",
+    "account_nature": "ASSET",
+    "account_class": "5",
+    "parent_code": "53",
+    "is_detail": true,
+    "is_reconcilable": false
+  },
+  {
+    "code": "58",
+    "name": "Virements internes",
+    "account_type": "FINANCIER",
+    "account_nature": "ASSET",
+    "account_class": "5",
+    "parent_code": "5",
+    "is_detail": true,
+    "is_reconcilable": false
+  },
+  {
+    "code": "59",
+    "name": "Dépréciations des comptes financiers",
+    "account_type": "FINANCIER",
+    "account_nature": "CONTRA_ASSET",
+    "account_class": "5",
+    "parent_code": "5",
+    "is_detail": true,
+    "is_reconcilable": false
+  },
+  {
+    "code": "6",
+    "name": "COMPTES DE CHARGES",
+    "account_type": "CHARGES",
+    "account_nature": "EXPENSE",
+    "account_class": "6",
+    "parent_code": null,
+    "is_detail": false,
+    "is_reconcilable": false
+  },
+  {
+    "code": "60",
+    "name": "Achats",
+    "account_type": "CHARGES",
+    "account_nature": "EXPENSE",
+    "account_class": "6",
+    "parent_code": "6",
+    "is_detail": false,
+    "is_reconcilable": false
+  },
+  {
+    "code": "601",
+    "name": "Achats de matières premières",
+    "account_type": "CHARGES",
+    "account_nature": "EXPENSE",
+    "account_class": "6",
+    "parent_code": "60",
+    "is_detail": true,
+    "is_reconcilable": false
+  },
+  {
+    "code": "602",
+    "name": "Achats d'autres approvisionnements",
+    "account_type": "CHARGES",
+    "account_nature": "EXPENSE",
+    "account_class": "6",
+    "parent_code": "60",
+    "is_detail": false,
+    "is_reconcilable": false
+  },
+  {
+    "code": "6021",
+    "name": "Matières consommables",
+    "account_type": "CHARGES",
+    "account_nature": "EXPENSE",
+    "account_class": "6",
+    "parent_code": "602",
+    "is_detail": true,
+    "is_reconcilable": false
+  },
+  {
+    "code": "6022",
+    "name": "Fournitures consommables",
+    "account_type": "CHARGES",
+    "account_nature": "EXPENSE",
+    "account_class": "6",
+    "parent_code": "602",
+    "is_detail": true,
+    "is_reconcilable": false
+  },
+  {
+    "code": "603",
+    "name": "Variations des stocks",
+    "account_type": "CHARGES",
+    "account_nature": "EXPENSE",
+    "account_class": "6",
+    "parent_code": "60",
+    "is_detail": true,
+    "is_reconcilable": false
+  },
+  {
+    "code": "604",
+    "name": "Achats d'études et prestations de services",
+    "account_type": "CHARGES",
+    "account_nature": "EXPENSE",
+    "account_class": "6",
+    "parent_code": "60",
+    "is_detail": true,
+    "is_reconcilable": false
+  },
+  {
+    "code": "606",
+    "name": "Achats non stockés de matières et fournitures",
+    "account_type": "CHARGES",
+    "account_nature": "EXPENSE",
+    "account_class": "6",
+    "parent_code": "60",
+    "is_detail": false,
+    "is_reconcilable": false
+  },
+  {
+    "code": "6061",
+    "name": "Fournitures non stockables (eau, énergie)",
+    "account_type": "CHARGES",
+    "account_nature": "EXPENSE",
+    "account_class": "6",
+    "parent_code": "606",
+    "is_detail": true,
+    "is_reconcilable": false
+  },
+  {
+    "code": "6063",
+    "name": "Fournitures d'entretien et petit équipement",
+    "account_type": "CHARGES",
+    "account_nature": "EXPENSE",
+    "account_class": "6",
+    "parent_code": "606",
+    "is_detail": true,
+    "is_reconcilable": false
+  },
+  {
+    "code": "6064",
+    "name": "Fournitures administratives",
+    "account_type": "CHARGES",
+    "account_nature": "EXPENSE",
+    "account_class": "6",
+    "parent_code": "606",
+    "is_detail": true,
+    "is_reconcilable": false
+  },
+  {
+    "code": "607",
+    "name": "Achats de marchandises",
+    "account_type": "CHARGES",
+    "account_nature": "EXPENSE",
+    "account_class": "6",
+    "parent_code": "60",
+    "is_detail": true,
+    "is_reconcilable": false
+  },
+  {
+    "code": "609",
+    "name": "Rabais, remises et ristournes obtenus sur achats",
+    "account_type": "CHARGES",
+    "account_nature": "EXPENSE",
+    "account_class": "6",
+    "parent_code": "60",
+    "is_detail": true,
+    "is_reconcilable": false
+  },
+  {
+    "code": "61",
+    "name": "Services extérieurs",
+    "account_type": "CHARGES",
+    "account_nature": "EXPENSE",
+    "account_class": "6",
+    "parent_code": "6",
+    "is_detail": false,
+    "is_reconcilable": false
+  },
+  {
+    "code": "611",
+    "name": "Sous-traitance générale",
+    "account_type": "CHARGES",
+    "account_nature": "EXPENSE",
+    "account_class": "6",
+    "parent_code": "61",
+    "is_detail": true,
+    "is_reconcilable": false
+  },
+  {
+    "code": "612",
+    "name": "Redevances de crédit-bail",
+    "account_type": "CHARGES",
+    "account_nature": "EXPENSE",
+    "account_class": "6",
+    "parent_code": "61",
+    "is_detail": false,
+    "is_reconcilable": false
+  },
+  {
+    "code": "6122",
+    "name": "Crédit-bail immobilier",
+    "account_type": "CHARGES",
+    "account_nature": "EXPENSE",
+    "account_class": "6",
+    "parent_code": "612",
+    "is_detail": true,
+    "is_reconcilable": false
+  },
+  {
+    "code": "6125",
+    "name": "Crédit-bail mobilier",
+    "account_type": "CHARGES",
+    "account_nature": "EXPENSE",
+    "account_class": "6",
+    "parent_code": "612",
+    "is_detail": true,
+    "is_reconcilable": false
+  },
+  {
+    "code": "613",
+    "name": "Locations",
+    "account_type": "CHARGES",
+    "account_nature": "EXPENSE",
+    "account_class": "6",
+    "parent_code": "61",
+    "is_detail": false,
+    "is_reconcilable": false
+  },
+  {
+    "code": "6132",
+    "name": "Locations immobilières",
+    "account_type": "CHARGES",
+    "account_nature": "EXPENSE",
+    "account_class": "6",
+    "parent_code": "613",
+    "is_detail": true,
+    "is_reconcilable": false
+  },
+  {
+    "code": "6135",
+    "name": "Locations mobilières",
+    "account_type": "CHARGES",
+    "account_nature": "EXPENSE",
+    "account_class": "6",
+    "parent_code": "613",
+    "is_detail": true,
+    "is_reconcilable": false
+  },
+  {
+    "code": "615",
+    "name": "Entretien et réparations",
+    "account_type": "CHARGES",
+    "account_nature": "EXPENSE",
+    "account_class": "6",
+    "parent_code": "61",
+    "is_detail": false,
+    "is_reconcilable": false
+  },
+  {
+    "code": "6152",
+    "name": "Entretien sur biens immobiliers",
+    "account_type": "CHARGES",
+    "account_nature": "EXPENSE",
+    "account_class": "6",
+    "parent_code": "615",
+    "is_detail": true,
+    "is_reconcilable": false
+  },
+  {
+    "code": "6155",
+    "name": "Entretien sur biens mobiliers",
+    "account_type": "CHARGES",
+    "account_nature": "EXPENSE",
+    "account_class": "6",
+    "parent_code": "615",
+    "is_detail": true,
+    "is_reconcilable": false
+  },
+  {
+    "code": "616",
+    "name": "Primes d'assurance",
+    "account_type": "CHARGES",
+    "account_nature": "EXPENSE",
+    "account_class": "6",
+    "parent_code": "61",
+    "is_detail": true,
+    "is_reconcilable": false
+  },
+  {
+    "code": "618",
+    "name": "Divers (documentation)",
+    "account_type": "CHARGES",
+    "account_nature": "EXPENSE",
+    "account_class": "6",
+    "parent_code": "61",
+    "is_detail": true,
+    "is_reconcilable": false
+  },
+  {
+    "code": "62",
+    "name": "Autres services extérieurs",
+    "account_type": "CHARGES",
+    "account_nature": "EXPENSE",
+    "account_class": "6",
+    "parent_code": "6",
+    "is_detail": false,
+    "is_reconcilable": false
+  },
+  {
+    "code": "621",
+    "name": "Personnel extérieur à l'entreprise",
+    "account_type": "CHARGES",
+    "account_nature": "EXPENSE",
+    "account_class": "6",
+    "parent_code": "62",
+    "is_detail": false,
+    "is_reconcilable": false
+  },
+  {
+    "code": "6211",
+    "name": "Personnel intérimaire",
+    "account_type": "CHARGES",
+    "account_nature": "EXPENSE",
+    "account_class": "6",
+    "parent_code": "621",
+    "is_detail": true,
+    "is_reconcilable": false
+  },
+  {
+    "code": "622",
+    "name": "Rémunérations d'intermédiaires et honoraires",
+    "account_type": "CHARGES",
+    "account_nature": "EXPENSE",
+    "account_class": "6",
+    "parent_code": "62",
+    "is_detail": false,
+    "is_reconcilable": false
+  },
+  {
+    "code": "6226",
+    "name": "Honoraires",
+    "account_type": "CHARGES",
+    "account_nature": "EXPENSE",
+    "account_class": "6",
+    "parent_code": "622",
+    "is_detail": true,
+    "is_reconcilable": false
+  },
+  {
+    "code": "6227",
+    "name": "Frais d'actes et de contentieux",
+    "account_type": "CHARGES",
+    "account_nature": "EXPENSE",
+    "account_class": "6",
+    "parent_code": "622",
+    "is_detail": true,
+    "is_reconcilable": false
+  },
+  {
+    "code": "623",
+    "name": "Publicité, publications, relations publiques",
+    "account_type": "CHARGES",
+    "account_nature": "EXPENSE",
+    "account_class": "6",
+    "parent_code": "62",
+    "is_detail": false,
+    "is_reconcilable": false
+  },
+  {
+    "code": "6231",
+    "name": "Annonces et insertions",
+    "account_type": "CHARGES",
+    "account_nature": "EXPENSE",
+    "account_class": "6",
+    "parent_code": "623",
+    "is_detail": true,
+    "is_reconcilable": false
+  },
+  {
+    "code": "6234",
+    "name": "Cadeaux à la clientèle",
+    "account_type": "CHARGES",
+    "account_nature": "EXPENSE",
+    "account_class": "6",
+    "parent_code": "623",
+    "is_detail": true,
+    "is_reconcilable": false
+  },
+  {
+    "code": "625",
+    "name": "Déplacements, missions et réceptions",
+    "account_type": "CHARGES",
+    "account_nature": "EXPENSE",
+    "account_class": "6",
+    "parent_code": "62",
+    "is_detail": false,
+    "is_reconcilable": false
+  },
+  {
+    "code": "6251",
+    "name": "Voyages et déplacements",
+    "account_type": "CHARGES",
+    "account_nature": "EXPENSE",
+    "account_class": "6",
+    "parent_code": "625",
+    "is_detail": true,
+    "is_reconcilable": false
+  },
+  {
+    "code": "6257",
+    "name": "Réceptions",
+    "account_type": "CHARGES",
+    "account_nature": "EXPENSE",
+    "account_class": "6",
+    "parent_code": "625",
+    "is_detail": true,
+    "is_reconcilable": false
+  },
+  {
+    "code": "626",
+    "name": "Frais postaux et de télécommunications",
+    "account_type": "CHARGES",
+    "account_nature": "EXPENSE",
+    "account_class": "6",
+    "parent_code": "62",
+    "is_detail": false,
+    "is_reconcilable": false
+  },
+  {
+    "code": "6261",
+    "name": "Frais postaux",
+    "account_type": "CHARGES",
+    "account_nature": "EXPENSE",
+    "account_class": "6",
+    "parent_code": "626",
+    "is_detail": true,
+    "is_reconcilable": false
+  },
+  {
+    "code": "6262",
+    "name": "Frais de télécommunications",
+    "account_type": "CHARGES",
+    "account_nature": "EXPENSE",
+    "account_class": "6",
+    "parent_code": "626",
+    "is_detail": true,
+    "is_reconcilable": false
+  },
+  {
+    "code": "627",
+    "name": "Services bancaires et assimilés",
+    "account_type": "CHARGES",
+    "account_nature": "EXPENSE",
+    "account_class": "6",
+    "parent_code": "62",
+    "is_detail": true,
+    "is_reconcilable": false
+  },
+  {
+    "code": "63",
+    "name": "Impôts, taxes et versements assimilés",
+    "account_type": "CHARGES",
+    "account_nature": "EXPENSE",
+    "account_class": "6",
+    "parent_code": "6",
+    "is_detail": false,
+    "is_reconcilable": false
+  },
+  {
+    "code": "631",
+    "name": "Impôts et taxes sur rémunérations",
+    "account_type": "CHARGES",
+    "account_nature": "EXPENSE",
+    "account_class": "6",
+    "parent_code": "63",
+    "is_detail": false,
+    "is_reconcilable": false
+  },
+  {
+    "code": "6311",
+    "name": "Taxe sur les salaires",
+    "account_type": "CHARGES",
+    "account_nature": "EXPENSE",
+    "account_class": "6",
+    "parent_code": "631",
+    "is_detail": true,
+    "is_reconcilable": false
+  },
+  {
+    "code": "6312",
+    "name": "Taxe d'apprentissage",
+    "account_type": "CHARGES",
+    "account_nature": "EXPENSE",
+    "account_class": "6",
+    "parent_code": "631",
+    "is_detail": true,
+    "is_reconcilable": false
+  },
+  {
+    "code": "6313",
+    "name": "Formation professionnelle continue",
+    "account_type": "CHARGES",
+    "account_nature": "EXPENSE",
+    "account_class": "6",
+    "parent_code": "631",
+    "is_detail": true,
+    "is_reconcilable": false
+  },
+  {
+    "code": "633",
+    "name": "Impôts et taxes — autres organismes",
+    "account_type": "CHARGES",
+    "account_nature": "EXPENSE",
+    "account_class": "6",
+    "parent_code": "63",
+    "is_detail": false,
+    "is_reconcilable": false
+  },
+  {
+    "code": "6331",
+    "name": "Versement de transport",
+    "account_type": "CHARGES",
+    "account_nature": "EXPENSE",
+    "account_class": "6",
+    "parent_code": "633",
+    "is_detail": true,
+    "is_reconcilable": false
+  },
+  {
+    "code": "635",
+    "name": "Autres impôts, taxes (administration des impôts)",
+    "account_type": "CHARGES",
+    "account_nature": "EXPENSE",
+    "account_class": "6",
+    "parent_code": "63",
+    "is_detail": false,
+    "is_reconcilable": false
+  },
+  {
+    "code": "6351",
+    "name": "Contribution économique territoriale (CET)",
+    "account_type": "CHARGES",
+    "account_nature": "EXPENSE",
+    "account_class": "6",
+    "parent_code": "635",
+    "is_detail": true,
+    "is_reconcilable": false
+  },
+  {
+    "code": "6352",
+    "name": "Taxes foncières",
+    "account_type": "CHARGES",
+    "account_nature": "EXPENSE",
+    "account_class": "6",
+    "parent_code": "635",
+    "is_detail": true,
+    "is_reconcilable": false
+  },
+  {
+    "code": "64",
+    "name": "Charges de personnel",
+    "account_type": "CHARGES",
+    "account_nature": "EXPENSE",
+    "account_class": "6",
+    "parent_code": "6",
+    "is_detail": false,
+    "is_reconcilable": false
+  },
+  {
+    "code": "641",
+    "name": "Rémunérations du personnel",
+    "account_type": "CHARGES",
+    "account_nature": "EXPENSE",
+    "account_class": "6",
+    "parent_code": "64",
+    "is_detail": false,
+    "is_reconcilable": false
+  },
+  {
+    "code": "6411",
+    "name": "Salaires et appointements",
+    "account_type": "CHARGES",
+    "account_nature": "EXPENSE",
+    "account_class": "6",
+    "parent_code": "641",
+    "is_detail": true,
+    "is_reconcilable": false
+  },
+  {
+    "code": "6412",
+    "name": "Congés payés",
+    "account_type": "CHARGES",
+    "account_nature": "EXPENSE",
+    "account_class": "6",
+    "parent_code": "641",
+    "is_detail": true,
+    "is_reconcilable": false
+  },
+  {
+    "code": "6413",
+    "name": "Primes et gratifications",
+    "account_type": "CHARGES",
+    "account_nature": "EXPENSE",
+    "account_class": "6",
+    "parent_code": "641",
+    "is_detail": true,
+    "is_reconcilable": false
+  },
+  {
+    "code": "645",
+    "name": "Charges de sécurité sociale et de prévoyance",
+    "account_type": "CHARGES",
+    "account_nature": "EXPENSE",
+    "account_class": "6",
+    "parent_code": "64",
+    "is_detail": false,
+    "is_reconcilable": false
+  },
+  {
+    "code": "6451",
+    "name": "Cotisations à l'URSSAF",
+    "account_type": "CHARGES",
+    "account_nature": "EXPENSE",
+    "account_class": "6",
+    "parent_code": "645",
+    "is_detail": true,
+    "is_reconcilable": false
+  },
+  {
+    "code": "6452",
+    "name": "Cotisations aux mutuelles",
+    "account_type": "CHARGES",
+    "account_nature": "EXPENSE",
+    "account_class": "6",
+    "parent_code": "645",
+    "is_detail": true,
+    "is_reconcilable": false
+  },
+  {
+    "code": "6453",
+    "name": "Cotisations aux caisses de retraite",
+    "account_type": "CHARGES",
+    "account_nature": "EXPENSE",
+    "account_class": "6",
+    "parent_code": "645",
+    "is_detail": true,
+    "is_reconcilable": false
+  },
+  {
+    "code": "6454",
+    "name": "Cotisations ASSEDIC / Pôle emploi",
+    "account_type": "CHARGES",
+    "account_nature": "EXPENSE",
+    "account_class": "6",
+    "parent_code": "645",
+    "is_detail": true,
+    "is_reconcilable": false
+  },
+  {
+    "code": "65",
+    "name": "Autres charges de gestion courante",
+    "account_type": "CHARGES",
+    "account_nature": "EXPENSE",
+    "account_class": "6",
+    "parent_code": "6",
+    "is_detail": false,
+    "is_reconcilable": false
+  },
+  {
+    "code": "651",
+    "name": "Redevances pour concessions, brevets, licences",
+    "account_type": "CHARGES",
+    "account_nature": "EXPENSE",
+    "account_class": "6",
+    "parent_code": "65",
+    "is_detail": true,
+    "is_reconcilable": false
+  },
+  {
+    "code": "654",
+    "name": "Pertes sur créances irrécouvrables",
+    "account_type": "CHARGES",
+    "account_nature": "EXPENSE",
+    "account_class": "6",
+    "parent_code": "65",
+    "is_detail": true,
+    "is_reconcilable": false
+  },
+  {
+    "code": "658",
+    "name": "Charges diverses de gestion courante",
+    "account_type": "CHARGES",
+    "account_nature": "EXPENSE",
+    "account_class": "6",
+    "parent_code": "65",
+    "is_detail": true,
+    "is_reconcilable": false
+  },
+  {
+    "code": "66",
+    "name": "Charges financières",
+    "account_type": "CHARGES",
+    "account_nature": "EXPENSE",
+    "account_class": "6",
+    "parent_code": "6",
+    "is_detail": false,
+    "is_reconcilable": false
+  },
+  {
+    "code": "661",
+    "name": "Charges d'intérêts",
+    "account_type": "CHARGES",
+    "account_nature": "EXPENSE",
+    "account_class": "6",
+    "parent_code": "66",
+    "is_detail": false,
+    "is_reconcilable": false
+  },
+  {
+    "code": "6611",
+    "name": "Intérêts des emprunts et dettes",
+    "account_type": "CHARGES",
+    "account_nature": "EXPENSE",
+    "account_class": "6",
+    "parent_code": "661",
+    "is_detail": true,
+    "is_reconcilable": false
+  },
+  {
+    "code": "6615",
+    "name": "Intérêts des dettes envers les établissements de crédit",
+    "account_type": "CHARGES",
+    "account_nature": "EXPENSE",
+    "account_class": "6",
+    "parent_code": "661",
+    "is_detail": true,
+    "is_reconcilable": false
+  },
+  {
+    "code": "665",
+    "name": "Escomptes accordés",
+    "account_type": "CHARGES",
+    "account_nature": "EXPENSE",
+    "account_class": "6",
+    "parent_code": "66",
+    "is_detail": true,
+    "is_reconcilable": false
+  },
+  {
+    "code": "666",
+    "name": "Pertes de change",
+    "account_type": "CHARGES",
+    "account_nature": "EXPENSE",
+    "account_class": "6",
+    "parent_code": "66",
+    "is_detail": true,
+    "is_reconcilable": false
+  },
+  {
+    "code": "67",
+    "name": "Charges exceptionnelles",
+    "account_type": "CHARGES",
+    "account_nature": "EXPENSE",
+    "account_class": "6",
+    "parent_code": "6",
+    "is_detail": false,
+    "is_reconcilable": false
+  },
+  {
+    "code": "671",
+    "name": "Charges exceptionnelles sur opérations de gestion",
+    "account_type": "CHARGES",
+    "account_nature": "EXPENSE",
+    "account_class": "6",
+    "parent_code": "67",
+    "is_detail": false,
+    "is_reconcilable": false
+  },
+  {
+    "code": "6711",
+    "name": "Pénalités et amendes fiscales ou pénales",
+    "account_type": "CHARGES",
+    "account_nature": "EXPENSE",
+    "account_class": "6",
+    "parent_code": "671",
+    "is_detail": true,
+    "is_reconcilable": false
+  },
+  {
+    "code": "6713",
+    "name": "Dons et libéralités",
+    "account_type": "CHARGES",
+    "account_nature": "EXPENSE",
+    "account_class": "6",
+    "parent_code": "671",
+    "is_detail": true,
+    "is_reconcilable": false
+  },
+  {
+    "code": "675",
+    "name": "Valeurs comptables des éléments d'actif cédés",
+    "account_type": "CHARGES",
+    "account_nature": "EXPENSE",
+    "account_class": "6",
+    "parent_code": "67",
+    "is_detail": true,
+    "is_reconcilable": false
+  },
+  {
+    "code": "678",
+    "name": "Autres charges exceptionnelles",
+    "account_type": "CHARGES",
+    "account_nature": "EXPENSE",
+    "account_class": "6",
+    "parent_code": "67",
+    "is_detail": true,
+    "is_reconcilable": false
+  },
+  {
+    "code": "68",
+    "name": "Dotations aux amortissements, dépréciations et provisions",
+    "account_type": "CHARGES",
+    "account_nature": "EXPENSE",
+    "account_class": "6",
+    "parent_code": "6",
+    "is_detail": false,
+    "is_reconcilable": false
+  },
+  {
+    "code": "681",
+    "name": "Dotations — charges d'exploitation",
+    "account_type": "CHARGES",
+    "account_nature": "EXPENSE",
+    "account_class": "6",
+    "parent_code": "68",
+    "is_detail": false,
+    "is_reconcilable": false
+  },
+  {
+    "code": "6811",
+    "name": "Dotations aux amortissements des immobilisations",
+    "account_type": "CHARGES",
+    "account_nature": "EXPENSE",
+    "account_class": "6",
+    "parent_code": "681",
+    "is_detail": true,
+    "is_reconcilable": false
+  },
+  {
+    "code": "6815",
+    "name": "Dotations aux provisions pour risques et charges",
+    "account_type": "CHARGES",
+    "account_nature": "EXPENSE",
+    "account_class": "6",
+    "parent_code": "681",
+    "is_detail": true,
+    "is_reconcilable": false
+  },
+  {
+    "code": "6816",
+    "name": "Dotations aux dépréciations des actifs circulants",
+    "account_type": "CHARGES",
+    "account_nature": "EXPENSE",
+    "account_class": "6",
+    "parent_code": "681",
+    "is_detail": true,
+    "is_reconcilable": false
+  },
+  {
+    "code": "686",
+    "name": "Dotations — charges financières",
+    "account_type": "CHARGES",
+    "account_nature": "EXPENSE",
+    "account_class": "6",
+    "parent_code": "68",
+    "is_detail": true,
+    "is_reconcilable": false
+  },
+  {
+    "code": "687",
+    "name": "Dotations — charges exceptionnelles",
+    "account_type": "CHARGES",
+    "account_nature": "EXPENSE",
+    "account_class": "6",
+    "parent_code": "68",
+    "is_detail": false,
+    "is_reconcilable": false
+  },
+  {
+    "code": "6871",
+    "name": "Dotations aux amortissements exceptionnels",
+    "account_type": "CHARGES",
+    "account_nature": "EXPENSE",
+    "account_class": "6",
+    "parent_code": "687",
+    "is_detail": true,
+    "is_reconcilable": false
+  },
+  {
+    "code": "6872",
+    "name": "Dotations aux provisions réglementées (immobilisations)",
+    "account_type": "CHARGES",
+    "account_nature": "EXPENSE",
+    "account_class": "6",
+    "parent_code": "687",
+    "is_detail": true,
+    "is_reconcilable": false
+  },
+  {
+    "code": "69",
+    "name": "Participation des salariés — Impôts sur les bénéfices",
+    "account_type": "CHARGES",
+    "account_nature": "EXPENSE",
+    "account_class": "6",
+    "parent_code": "6",
+    "is_detail": false,
+    "is_reconcilable": false
+  },
+  {
+    "code": "691",
+    "name": "Participation des salariés aux résultats",
+    "account_type": "CHARGES",
+    "account_nature": "EXPENSE",
+    "account_class": "6",
+    "parent_code": "69",
+    "is_detail": true,
+    "is_reconcilable": false
+  },
+  {
+    "code": "695",
+    "name": "Impôts sur les bénéfices",
+    "account_type": "CHARGES",
+    "account_nature": "EXPENSE",
+    "account_class": "6",
+    "parent_code": "69",
+    "is_detail": false,
+    "is_reconcilable": false
+  },
+  {
+    "code": "6951",
+    "name": "Impôts sur les bénéfices dus en France",
+    "account_type": "CHARGES",
+    "account_nature": "EXPENSE",
+    "account_class": "6",
+    "parent_code": "695",
+    "is_detail": true,
+    "is_reconcilable": false
+  },
+  {
+    "code": "6952",
+    "name": "Impôts sur les bénéfices dus à l'étranger",
+    "account_type": "CHARGES",
+    "account_nature": "EXPENSE",
+    "account_class": "6",
+    "parent_code": "695",
+    "is_detail": true,
+    "is_reconcilable": false
+  },
+  {
+    "code": "7",
+    "name": "COMPTES DE PRODUITS",
+    "account_type": "PRODUITS",
+    "account_nature": "REVENUE",
+    "account_class": "7",
+    "parent_code": null,
+    "is_detail": false,
+    "is_reconcilable": false
+  },
+  {
+    "code": "70",
+    "name": "Ventes de produits fabriqués, prestations, marchandises",
+    "account_type": "PRODUITS",
+    "account_nature": "REVENUE",
+    "account_class": "7",
+    "parent_code": "7",
+    "is_detail": false,
+    "is_reconcilable": false
+  },
+  {
+    "code": "701",
+    "name": "Ventes de produits finis",
+    "account_type": "PRODUITS",
+    "account_nature": "REVENUE",
+    "account_class": "7",
+    "parent_code": "70",
+    "is_detail": true,
+    "is_reconcilable": false
+  },
+  {
+    "code": "704",
+    "name": "Travaux",
+    "account_type": "PRODUITS",
+    "account_nature": "REVENUE",
+    "account_class": "7",
+    "parent_code": "70",
+    "is_detail": true,
+    "is_reconcilable": false
+  },
+  {
+    "code": "705",
+    "name": "Études",
+    "account_type": "PRODUITS",
+    "account_nature": "REVENUE",
+    "account_class": "7",
+    "parent_code": "70",
+    "is_detail": true,
+    "is_reconcilable": false
+  },
+  {
+    "code": "706",
+    "name": "Prestations de services",
+    "account_type": "PRODUITS",
+    "account_nature": "REVENUE",
+    "account_class": "7",
+    "parent_code": "70",
+    "is_detail": true,
+    "is_reconcilable": false
+  },
+  {
+    "code": "707",
+    "name": "Ventes de marchandises",
+    "account_type": "PRODUITS",
+    "account_nature": "REVENUE",
+    "account_class": "7",
+    "parent_code": "70",
+    "is_detail": true,
+    "is_reconcilable": false
+  },
+  {
+    "code": "708",
+    "name": "Produits des activités annexes",
+    "account_type": "PRODUITS",
+    "account_nature": "REVENUE",
+    "account_class": "7",
+    "parent_code": "70",
+    "is_detail": true,
+    "is_reconcilable": false
+  },
+  {
+    "code": "709",
+    "name": "Rabais, remises et ristournes accordés sur ventes",
+    "account_type": "PRODUITS",
+    "account_nature": "REVENUE",
+    "account_class": "7",
+    "parent_code": "70",
+    "is_detail": true,
+    "is_reconcilable": false
+  },
+  {
+    "code": "71",
+    "name": "Production stockée",
+    "account_type": "PRODUITS",
+    "account_nature": "REVENUE",
+    "account_class": "7",
+    "parent_code": "7",
+    "is_detail": false,
+    "is_reconcilable": false
+  },
+  {
+    "code": "713",
+    "name": "Variation des stocks de produits",
+    "account_type": "PRODUITS",
+    "account_nature": "REVENUE",
+    "account_class": "7",
+    "parent_code": "71",
+    "is_detail": true,
+    "is_reconcilable": false
+  },
+  {
+    "code": "72",
+    "name": "Production immobilisée",
+    "account_type": "PRODUITS",
+    "account_nature": "REVENUE",
+    "account_class": "7",
+    "parent_code": "7",
+    "is_detail": false,
+    "is_reconcilable": false
+  },
+  {
+    "code": "721",
+    "name": "Immobilisations incorporelles",
+    "account_type": "PRODUITS",
+    "account_nature": "REVENUE",
+    "account_class": "7",
+    "parent_code": "72",
+    "is_detail": true,
+    "is_reconcilable": false
+  },
+  {
+    "code": "722",
+    "name": "Immobilisations corporelles",
+    "account_type": "PRODUITS",
+    "account_nature": "REVENUE",
+    "account_class": "7",
+    "parent_code": "72",
+    "is_detail": true,
+    "is_reconcilable": false
+  },
+  {
+    "code": "74",
+    "name": "Subventions d'exploitation",
+    "account_type": "PRODUITS",
+    "account_nature": "REVENUE",
+    "account_class": "7",
+    "parent_code": "7",
+    "is_detail": true,
+    "is_reconcilable": false
+  },
+  {
+    "code": "75",
+    "name": "Autres produits de gestion courante",
+    "account_type": "PRODUITS",
+    "account_nature": "REVENUE",
+    "account_class": "7",
+    "parent_code": "7",
+    "is_detail": false,
+    "is_reconcilable": false
+  },
+  {
+    "code": "751",
+    "name": "Redevances pour concessions, brevets, licences",
+    "account_type": "PRODUITS",
+    "account_nature": "REVENUE",
+    "account_class": "7",
+    "parent_code": "75",
+    "is_detail": true,
+    "is_reconcilable": false
+  },
+  {
+    "code": "758",
+    "name": "Produits divers de gestion courante",
+    "account_type": "PRODUITS",
+    "account_nature": "REVENUE",
+    "account_class": "7",
+    "parent_code": "75",
+    "is_detail": true,
+    "is_reconcilable": false
+  },
+  {
+    "code": "76",
+    "name": "Produits financiers",
+    "account_type": "PRODUITS",
+    "account_nature": "REVENUE",
+    "account_class": "7",
+    "parent_code": "7",
+    "is_detail": false,
+    "is_reconcilable": false
+  },
+  {
+    "code": "761",
+    "name": "Produits de participations",
+    "account_type": "PRODUITS",
+    "account_nature": "REVENUE",
+    "account_class": "7",
+    "parent_code": "76",
+    "is_detail": true,
+    "is_reconcilable": false
+  },
+  {
+    "code": "764",
+    "name": "Revenus des valeurs mobilières de placement",
+    "account_type": "PRODUITS",
+    "account_nature": "REVENUE",
+    "account_class": "7",
+    "parent_code": "76",
+    "is_detail": true,
+    "is_reconcilable": false
+  },
+  {
+    "code": "765",
+    "name": "Escomptes obtenus",
+    "account_type": "PRODUITS",
+    "account_nature": "REVENUE",
+    "account_class": "7",
+    "parent_code": "76",
+    "is_detail": true,
+    "is_reconcilable": false
+  },
+  {
+    "code": "766",
+    "name": "Gains de change",
+    "account_type": "PRODUITS",
+    "account_nature": "REVENUE",
+    "account_class": "7",
+    "parent_code": "76",
+    "is_detail": true,
+    "is_reconcilable": false
+  },
+  {
+    "code": "767",
+    "name": "Produits nets sur cessions de VMP",
+    "account_type": "PRODUITS",
+    "account_nature": "REVENUE",
+    "account_class": "7",
+    "parent_code": "76",
+    "is_detail": true,
+    "is_reconcilable": false
+  },
+  {
+    "code": "77",
+    "name": "Produits exceptionnels",
+    "account_type": "PRODUITS",
+    "account_nature": "REVENUE",
+    "account_class": "7",
+    "parent_code": "7",
+    "is_detail": false,
+    "is_reconcilable": false
+  },
+  {
+    "code": "771",
+    "name": "Produits exceptionnels sur opérations de gestion",
+    "account_type": "PRODUITS",
+    "account_nature": "REVENUE",
+    "account_class": "7",
+    "parent_code": "77",
+    "is_detail": true,
+    "is_reconcilable": false
+  },
+  {
+    "code": "775",
+    "name": "Produits des cessions d'éléments d'actif",
+    "account_type": "PRODUITS",
+    "account_nature": "REVENUE",
+    "account_class": "7",
+    "parent_code": "77",
+    "is_detail": true,
+    "is_reconcilable": false
+  },
+  {
+    "code": "777",
+    "name": "Quote-part des subventions d'investissement virée au résultat",
+    "account_type": "PRODUITS",
+    "account_nature": "REVENUE",
+    "account_class": "7",
+    "parent_code": "77",
+    "is_detail": true,
+    "is_reconcilable": false
+  },
+  {
+    "code": "778",
+    "name": "Autres produits exceptionnels",
+    "account_type": "PRODUITS",
+    "account_nature": "REVENUE",
+    "account_class": "7",
+    "parent_code": "77",
+    "is_detail": true,
+    "is_reconcilable": false
+  },
+  {
+    "code": "78",
+    "name": "Reprises sur amortissements, dépréciations et provisions",
+    "account_type": "PRODUITS",
+    "account_nature": "REVENUE",
+    "account_class": "7",
+    "parent_code": "7",
+    "is_detail": false,
+    "is_reconcilable": false
+  },
+  {
+    "code": "781",
+    "name": "Reprises — exploitation",
+    "account_type": "PRODUITS",
+    "account_nature": "REVENUE",
+    "account_class": "7",
+    "parent_code": "78",
+    "is_detail": false,
+    "is_reconcilable": false
+  },
+  {
+    "code": "7811",
+    "name": "Reprises sur amortissements des immobilisations",
+    "account_type": "PRODUITS",
+    "account_nature": "REVENUE",
+    "account_class": "7",
+    "parent_code": "781",
+    "is_detail": true,
+    "is_reconcilable": false
+  },
+  {
+    "code": "7815",
+    "name": "Reprises sur provisions pour risques et charges",
+    "account_type": "PRODUITS",
+    "account_nature": "REVENUE",
+    "account_class": "7",
+    "parent_code": "781",
+    "is_detail": true,
+    "is_reconcilable": false
+  },
+  {
+    "code": "7816",
+    "name": "Reprises sur dépréciations des actifs circulants",
+    "account_type": "PRODUITS",
+    "account_nature": "REVENUE",
+    "account_class": "7",
+    "parent_code": "781",
+    "is_detail": true,
+    "is_reconcilable": false
+  },
+  {
+    "code": "786",
+    "name": "Reprises — financiers",
+    "account_type": "PRODUITS",
+    "account_nature": "REVENUE",
+    "account_class": "7",
+    "parent_code": "78",
+    "is_detail": true,
+    "is_reconcilable": false
+  },
+  {
+    "code": "787",
+    "name": "Reprises — exceptionnels",
+    "account_type": "PRODUITS",
+    "account_nature": "REVENUE",
+    "account_class": "7",
+    "parent_code": "78",
+    "is_detail": true,
+    "is_reconcilable": false
+  },
+  {
+    "code": "79",
+    "name": "Transferts de charges",
+    "account_type": "PRODUITS",
+    "account_nature": "REVENUE",
+    "account_class": "7",
+    "parent_code": "7",
+    "is_detail": false,
+    "is_reconcilable": false
+  },
+  {
+    "code": "791",
+    "name": "Transferts de charges d'exploitation",
+    "account_type": "PRODUITS",
+    "account_nature": "REVENUE",
+    "account_class": "7",
+    "parent_code": "79",
+    "is_detail": true,
+    "is_reconcilable": false
+  },
+  {
+    "code": "796",
+    "name": "Transferts de charges financières",
+    "account_type": "PRODUITS",
+    "account_nature": "REVENUE",
+    "account_class": "7",
+    "parent_code": "79",
+    "is_detail": true,
+    "is_reconcilable": false
+  },
+  {
+    "code": "797",
+    "name": "Transferts de charges exceptionnelles",
+    "account_type": "PRODUITS",
+    "account_nature": "REVENUE",
+    "account_class": "7",
+    "parent_code": "79",
+    "is_detail": true,
+    "is_reconcilable": false
+  },
+  {
+    "code": "8",
+    "name": "COMPTES SPÉCIAUX",
+    "account_type": "SPECIAUX",
+    "account_nature": "ASSET",
+    "account_class": "8",
+    "parent_code": null,
+    "is_detail": false,
+    "is_reconcilable": false
+  },
+  {
+    "code": "80",
+    "name": "Engagements hors bilan",
+    "account_type": "SPECIAUX",
+    "account_nature": "ASSET",
+    "account_class": "8",
+    "parent_code": "8",
+    "is_detail": false,
+    "is_reconcilable": false
+  },
+  {
+    "code": "801",
+    "name": "Engagements donnés par l'entreprise",
+    "account_type": "SPECIAUX",
+    "account_nature": "ASSET",
+    "account_class": "8",
+    "parent_code": "80",
+    "is_detail": true,
+    "is_reconcilable": false
+  },
+  {
+    "code": "802",
+    "name": "Engagements reçus par l'entreprise",
+    "account_type": "SPECIAUX",
+    "account_nature": "ASSET",
+    "account_class": "8",
+    "parent_code": "80",
+    "is_detail": true,
+    "is_reconcilable": false
+  }
+]
