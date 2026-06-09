@@ -16,6 +16,12 @@ A Python CLI agent that reads your bank's CSV/Excel exports and generates a clea
 ## Installation
 
 ```bash
+# Create and activate a virtual environment (recommended)
+python -m venv .venv
+source .venv/bin/activate   # Linux/macOS
+.venv\Scripts\activate      # Windows
+
+# Install dependencies
 pip install -r requirements.txt
 ```
 
@@ -93,13 +99,29 @@ pytest tests/
 ## Project structure
 
 ```
+Accounting-project/
+├── README.md
+├── requirements.txt         # Python dependencies
+├── config.yaml              # Column mapping, date format, currency
+├── categories.yaml          # Keyword categorization rules
 ├── src/
-│   ├── loader.py       # CSV/Excel ingestion
-│   ├── processor.py    # Categorization and aggregation
-│   ├── reporter.py     # PDF generation (matplotlib + reportlab)
-│   └── main.py         # CLI entry point
-├── data/sample/        # Sample transaction files
-├── reports/            # Generated PDF reports (git-ignored)
-├── config.yaml         # Column mapping and settings
-└── categories.yaml     # Category keyword rules
+│   ├── __init__.py
+│   ├── loader.py            # CSV/Excel ingestion and normalization
+│   ├── processor.py         # Categorization, filtering, aggregation
+│   ├── reporter.py          # PDF report and chart generation
+│   └── main.py              # CLI entry point (Click)
+├── data/
+│   └── sample/
+│       └── transactions_sample.csv   # Sample data (Jan–May 2026)
+├── reports/                 # Generated PDF reports (git-ignored)
+└── tests/
+    └── test_processor.py    # Pytest unit tests
+```
+
+## Sample data
+
+A sample file with ~88 transactions covering January–May 2026 is provided at `data/sample/transactions_sample.csv`. Use it to generate a test report:
+
+```bash
+python -m src.main data/sample/transactions_sample.csv --year 2026 --month 5
 ```
