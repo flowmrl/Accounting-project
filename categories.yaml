@@ -1,0 +1,101 @@
+# Keyword-based category rules
+# Keys are category names, values are lists of keywords (case-insensitive)
+# First matching category wins
+
+income:
+  - salary
+  - payroll
+  - virement salaire
+  - freelance
+  - dividend
+  - remboursement
+
+housing:
+  - loyer
+  - rent
+  - mortgage
+  - assurance habitation
+  - electricite
+  - edf
+  - gaz
+  - internet
+  - sfr
+  - orange
+  - free mobile
+
+food_groceries:
+  - carrefour
+  - leclerc
+  - lidl
+  - aldi
+  - monoprix
+  - franprix
+  - intermarche
+  - casino
+  - super
+  - marche
+  - boulangerie
+
+restaurants:
+  - restaurant
+  - cafe
+  - brasserie
+  - mcdonalds
+  - burger
+  - pizza
+  - sushi
+  - uber eats
+  - deliveroo
+  - just eat
+
+transport:
+  - sncf
+  - ratp
+  - navigo
+  - essence
+  - total
+  - bp
+  - shell
+  - parking
+  - uber
+  - blablacar
+  - air france
+  - transavia
+
+health:
+  - pharmacie
+  - medecin
+  - hopital
+  - mutuelle
+  - secu
+  - dentiste
+  - opticien
+
+shopping:
+  - amazon
+  - fnac
+  - darty
+  - zara
+  - h&m
+  - asos
+  - primark
+  - decathlon
+  - ikea
+
+leisure:
+  - netflix
+  - spotify
+  - disney
+  - cinema
+  - theatre
+  - sport
+  - salle de sport
+  - abonnement
+
+banking:
+  - frais bancaires
+  - cotisation
+  - assurance vie
+  - virement
+
+other: []  # catch-all

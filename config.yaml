@@ -1,0 +1,18 @@
+# Column mapping for your CSV/Excel exports
+# Change these to match your bank's column names
+columns:
+  date: "Date"
+  description: "Description"
+  amount: "Amount"          # positive = income, negative = expense
+  # If your bank uses separate debit/credit columns, use:
+  # debit: "Debit"
+  # credit: "Credit"
+
+# Date format in your CSV (Python strftime format)
+date_format: "%Y-%m-%d"
+
+# Currency symbol
+currency: "€"
+
+# Output directory for generated reports
+output_dir: "reports"
